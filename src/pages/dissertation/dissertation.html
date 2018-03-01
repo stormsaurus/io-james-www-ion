@@ -1,0 +1,1229 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Dissertation</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding delegate-handle="pageDelegate">
+    <div class="content">
+		<h3 class="contentTitle"></h3>
+		<div class="contentBody">
+
+			<div id="dissertationHead">
+				<div id="title" class="section">
+					<h3>UNIVERSITY OF CALIFORNIA</h3>
+					<p>Los Angeles</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<p>The phase behavior and kinetics of selected amphiphilic Langmuir monolayers.</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<p>A dissertation submitted in partial satisfaction of the requirements for the degree Doctor of Philosophy in Chemistry</p>
+					<br />
+					<p>by</p>
+					<p>Ellis James Teer</p>
+					<br />
+					<br />
+					<br />
+					<p>2002</p>
+				</div>
+				<div id="copyright" class="section">
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<p>&copy; Copyright by</p>
+					<p>Ellis James Teer</p>
+					<p>2002</p>
+				</div>
+				<div id="signature" class="section">
+					<p>The dissertation of Ellis James Teer is approved.</p>
+					<br />
+					<p class="signatureLine">_________________________________</p>
+					<p class="signatureLine">Robijn Bruinsma</p>
+					<p class="signatureLine">_________________________________</p>
+					<p class="signatureLine">James Heath</p>
+					<p class="signatureLine">_________________________________</p>
+					<p class="signatureLine">Charles M. Knobler, Committee Chair</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<p>University of California, Los Angeles</p>
+					<p>2002</p>
+					<br />
+					<p class="pageNumber">ii</p>
+				</div>
+				<div id="dedication" class="section">
+					<h3>DEDICATIONS</h3>
+					<br />
+					<br />
+					<p>To my parents in memorial, Ellis and Linda, whose sacrifices made such things possible.</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<p class="pageNumber">iii</p>
+				</div>
+				<div id="tableOfContents" class="section">
+					<h3>TABLE OF CONTENTS</h3>
+
+					<ul>
+						<li><a (click)="scrollTo('listOfFiguresAndTables')" href="#" xhref="#listOfFiguresAndTables">LIST OF FIGURES AND TABLES</a></li>
+					</ul>
+					<ol>
+						<li><a (click)="scrollTo('introduction')" href="#" xhref="#introduction">INTRODUCTION</a>
+							<ol>
+								<li><a (click)="scrollTo('langmuirMonolayers')" href="#" xhref="#langmuirMonolayers">LANGMUIR MONOLAYERS</a></li>
+								<li><a (click)="scrollTo('generalTechniques')" href="#" xhref="#generalTechniques">GENERAL TECHNIQUES</a></li>
+								<li><a (click)="scrollTo('opticalAndDiffreactionTechniques')" href="#" xhref="#opticalAndDiffreactionTechniques">OPTICAL AND DIFFRACTION TECHNIQUES</a></li>
+								<li><a (click)="scrollTo('phaseDiagrams')" href="#" xhref="#phaseDiagrams">PHASE DIAGRAMS</a></li>
+								<li><a (click)="scrollTo('structuresOfThePhases')" href="#" xhref="#structuresOfThePhases">STRUCTURES OF THE PHASES</a></li>
+								<li><a (click)="scrollTo('gixdDataAnalysisOfTheCondensedPhases')" href="#" xhref="#gixdDataAnalysisOfTheCondensedPhases">GIXD DATA ANALYSIS OF THE CONDENSED PHASES</a></li>
+							</ol>
+						</li>
+						<li><a (click)="scrollTo('opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidAlcoholMixtures')" href="#" xhref="#opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidAlcoholMixtures">OPTICAL MEASUREMENTS OF THE PHASE DIAGRAM OF LANGMUIR MONOLAYERS OF FATTY ACID-ALCOHOL MIXTURESM</a></li>
+						<li><a (click)="scrollTo('opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidEsterAlcoholMixtures')" href="#" xhref="#opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidEsterAlcoholMixtures">OPTICAL MEASUREMENTS OF THE PHASE DIAGRAM OF LANGMUIR MONOLAYERS OF FATTY ACID, ESTER, AND ALCOHOL MIXTURES BY BREWSTER-ANGLE MICROSCOPY</a></li>
+						<li><a (click)="scrollTo('transitionBetweenTwoNextNearestNeighborPhases')" href="#" xhref="#transitionBetweenTwoNextNearestNeighborPhases">TRANSITION BETWEEN TWO NEXT-NEAREST-NEIGHBOR PHASES IN A MIXED LANGMUIR MONOLAYER.  A STUDY BY GRAZING-INCIDENCE X-RAY DIFFRACTION AND BREWSTER-ANGLE MICROSCOPY</a></li>
+						<li><a (click)="scrollTo('phaseDiagramsForMonolayersOfLongChainThioacetates')" href="#" xhref="#phaseDiagramsForMonolayersOfLongChainThioacetates">PHASE DIAGRAMS FOR MONOLAYERS OF LONG-CHAIN THIOACETATES</a></li>
+						<li><a (click)="scrollTo('unexpectedAppearanceOfAPhaseWithNearestNeighborTilt')" href="#" xhref="#unexpectedAppearanceOfAPhaseWithNearestNeighborTilt">GRAZING INCIDENCE DIFFRACTION AND BREWSTER-ANGLE MICROSCOPE STUDIES OF MIXTURES OF HEXADECANOIC ACID AND METHYL HEXADECANOATE:  THE UNEXPECTED APPEARANCE OF A PHASE WITH NEAREST-NEIGHBOR TILT</a></li>
+						<li><a (click)="scrollTo('additionalFindingsAndAnalysisOfLangmuirMonolayersAtEquilibrium')" href="#" xhref="#additionalFindingsAndAnalysisOfLangmuirMonolayersAtEquilibrium">ADDITIONAL FINDINGS AND ANALYSIS OF LANGMUIR MONOLAYERS AT EQUILIBRIUM</a>
+							<ol>
+									<li><a (click)="scrollTo('AFintroduction')" href="#" xhref="#AFintroduction">INTRODUCTION</a></li>
+									<li><a (click)="scrollTo('AFtypesOfPhaseDiagrams')" href="#" xhref="#AFtypesOfPhaseDiagrams">TYPES OF PHASE DIAGRAMS</a></li>
+									<li><a (click)="scrollTo('AFanalysis')" href="#" xhref="#AFanalysis">ANALYSIS</a></li>
+									<li><a (click)="scrollTo('AFfreeEnergyInTermsOfOrderParameters')" href="#" xhref="#AFfreeEnergyInTermsOfOrderParameters">FREE ENERGY IN TERMS OF ORDER PARAMETERS</a></li>
+									<li><a (click)="scrollTo('AFtemperatureAndPressureDependenceOfPhaseBoundaries')" href="#" xhref="#AFtemperatureAndPressureDependenceOfPhaseBoundaries">TEMPERATURE AND PRESSURE DEPENDENCE OF PHASE BOUNDARIES</a></li>
+									<li><a (click)="scrollTo('AFconclusion')" href="#" xhref="#AFconclusion">CONCLUSION</a></li>
+							</ol>
+						</li>
+						<li><a (click)="scrollTo('domainKineticsStudiedByImageAnalysisOfBrewsterAngleMicroscopyData')" href="#" xhref="#domainKineticsStudiedByImageAnalysisOfBrewsterAngleMicroscopyData">DOMAIN KINETICS STUDIED BY IMAGE ANALYSIS OF BREWSTER-ANGLE MICROSCOPY DATA</a>
+							<ol>
+									<li><a (click)="scrollTo('DKintroduction')" href="#" xhref="#DKintroduction">INTRODUCTION</a></li>
+									<li><a (click)="scrollTo('DKtheoryOfDomainGrowth')" href="#" xhref="#DKtheoryOfDomainGrowth">THEORY OF DOMAIN GROWTH</a></li>
+									<li><a (click)="scrollTo('DKtheoryOfImageProcessing')" href="#" xhref="#DKtheoryOfImageProcessing">THEORY OF IMAGE PROCESSING</a></li>
+									<li><a (click)="scrollTo('DKbamExperiment')" href="#" xhref="#DKbamExperiment">BAM EXPERIMENT</a></li>
+									<li><a (click)="scrollTo('DKimageProcessing')" href="#" xhref="#DKimageProcessing">IMAGE PROCESSING</a></li>
+									<li><a (click)="scrollTo('DKresults')" href="#" xhref="#DKresults">RESULTS</a></li>
+									<li><a (click)="scrollTo('DKconclusion')" href="#" xhref="#DKconclusion">CONCLUSION</a></li>
+							</ol>
+						</li>
+						<li><a (click)="scrollTo('appendixUseOfImageProcessingSoftware')" href="#" xhref="#appendixUseOfImageProcessingSoftware">APPENDIX: USE OF IMAGE PROCESSING SOFTWARE</a>
+							<ol>
+									<li><a (click)="scrollTo('IPgeneral')" href="#" xhref="#IPgeneral">GENERAL</a></li>
+									<li><a (click)="scrollTo('IPsettingProcessingParameters')" href="#" xhref="#IPsettingProcessingParameters">SETTING PROCESSING PARAMETERS</a></li>
+									<li><a (click)="scrollTo('IPsingleStepProcessingRoutineDescriptions')" href="#" xhref="#IPsingleStepProcessingRoutineDescriptions">SINGLE-STEP PROCESSING ROUTINE DESCRIPTIONS</a></li>
+									<li><a (click)="scrollTo('IPmultiStepProcessingRoutineDescriptions')" href="#" xhref="#IPmultiStepProcessingRoutineDescriptions">MULTI-STEP PROCESSING ROUTINE DESCRIPTIONS</a></li>
+									<li><a (click)="scrollTo('IPprogramStructure')" href="#" xhref="#IPprogramStructure">PROGRAM STRUCTURE</a></li>
+							</ol>
+						</li>
+						<li><a (click)="scrollTo('references')" href="#" xhref="#references">REFERENCES</a></li>
+					</ol>
+				</div>
+
+				<div id="listOfFiguresAndTables" class="section">
+					<h3>LIST OF FIGURES AND TABLES</h3>
+					<table>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-1')" href="#" xhref="#figI-1">FIGURE I-1</a></td>
+							<td>SCHEMATIC OF A LANGMUIR MONOLAYER</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-2')" href="#" xhref="#figI-2">FIGURE I-2</a></td>
+							<td>THE SPACE FILLING STRUCTURE AND IDENTIFICATION OF THE HEAD AND TAIL GROUP OF COMPOUNDS USED IN THIS WORK.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-3')" href="#" xhref="#figI-3">FIGURE I-3</a></td>
+							<td>GENERAL ISOTHERM PLOT SHOWING SEVERAL BASIC PHASES.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-4')" href="#" xhref="#figI-4">FIGURE I-4</a></td>
+							<td>SCHEMATIC OF A TROUGH USED TO CONTROL THE THERMODYNAMIC CONDITIONS OF A LANGMUIR MONOLAYER.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-5')" href="#" xhref="#figI-5">FIGURE I-5</a></td>
+							<td>SCHEMATIC REPRESENTATION OF THE BASIC PHASES OF A LANGMUIR MONOLAYER.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-6')" href="#" xhref="#figI-6">FIGURE I-6</a></td>
+							<td>DEFINITION OF P- AND S- POLARIZED LIGHT AND THE REFLECTIVE INTENSITY OFF A SURFACE AS A FUNCTION OF INCIDENT ANGLE. (Θ<sub>B</sub> IS THE BREWSTER-ANGLE)</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-7')" href="#" xhref="#figI-7">FIGURE I-7</a></td>
+							<td>EXAMPLES OF TEXTURES WE HAVE SEEN BY BREWSTER-ANGLE MICROSCOPY.  THE FIELD OF VIEW IS APPROXIMATELY 500μm AND THE WHITE SIZING BAR IS 100μm.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-8')" href="#" xhref="#figI-8">FIGURE I-8</a></td>
+							<td>GENERAL PHASE DIAGRAM.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-9')" href="#" xhref="#figI-9">FIGURE I-9</a></td>
+							<td>DEFINITION OF MOLECULAR AXES (LEFT) AND HEXATIC AXIS (RIGHT).</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-10')" href="#" xhref="#figI-10">FIGURE I-10</a></td>
+							<td>SCHEMATIC OF NEAREST NEIGHBOR (NN) AND NEXT NEAREST NEIGHBOR (NNN) TILT IN A CONDENSED PHASE.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-11')" href="#" xhref="#figI-11">FIGURE I-11</a></td>
+							<td>SCHEMATIC OF HERRINGBONE ORDER (HO).</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figI-12')" href="#" xhref="#figI-12">FIGURE I-12</a></td>
+							<td>SCATTERING PEAKS OF: A) UNTILTED MOLECULES WITH A HEXAGONAL UNIT CELL AND DISTORTION IN THE NNN DIRECTION. B) TILT AND HEXAGONAL UNIT CELL DISTORTION IN THE NN DIRECTION.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVII-1')" href="#" xhref="#figVII-1">FIGURE VII-1</a></td>
+							<td>GENERAL TYPE I PHASE DIAGRAM.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVII-2')" href="#" xhref="#figVII-2">FIGURE VII-2</a></td>
+							<td>GENERAL TYPE II PHASE DIAGRAM.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVII-3')" href="#" xhref="#figVII-3">FIGURE VII-3</a></td>
+							<td>HIGHLY SCHEMATIC PHASE DIAGRAM.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVII-4')" href="#" xhref="#figVII-4">FIGURE VII-4</a></td>
+							<td>SCHEMATIC PHASE DIAGRAM AFTER ANALYSIS.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-1')" href="#" xhref="#figVIII-1">FIGURE VIII-1</a></td>
+							<td>MOSAIC TEXTURE (LEFT) OF A TYPICAL LANGMUIR MONOLAYER WITH AZIMUTHAL TILT DIRECTORS SCHEMATICALLY REPRESENTED (RIGHT).</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-2')" href="#" xhref="#figVIII-2">FIGURE VIII-2</a></td>
+							<td>MONTE CARLO RESULTS FROM A MODIFIED 6-STATE POTTS MODEL.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-3')" href="#" xhref="#figVIII-3">FIGURE VIII-3</a></td>
+							<td>CAPTURED IMAGES AT TIMES 12S, 36S, 1M, 1M40S, 3M20S, 5M (LEFT TO RIGHT THEN TOP TO BOTTOM).  THE FIELD OF VIEW IS NOT DISTORTION CORRECTED FOR THE BAM VIEWING ANGLE AND IS 200μm WIDE.  THE FOCAL LINE IS LEFT TO RIGHT.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-4')" href="#" xhref="#figVIII-4">FIGURE VIII-4</a></td>
+							<td>THEORETICAL REFLECTIVITY RESPONSE FUNCTION FOR N-NONADECANOL (TILT 20&deg;, WAVELENGTH 514NM, DIELECTRIC PERMEABILITY 2.31, AND DELTA DIELECTRIC 0.12).  THE FUNCTION WAS DERIVED BY C. LAUTZ ET AL. AND TH. M. FISCHER [<a (click)="scrollTo('ref50')" xhref="#ref50">50</a>,<a (click)="scrollTo('ref51')" xhref="#ref51">51</a>]</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-5')" href="#" xhref="#figVIII-5">FIGURE VIII-5</a></td>
+							<td>RESULTS FROM A TYPICAL PROCESSING RUN AT EARLY TIME (TOP) AND LATE TIME (BOTTOM).  THE LEFT IMAGE IS AFTER BACKGROUND SUBTRACTION.  THE CENTER IMAGE IS THE DENOISE-DEBLURRED IMAGE WITH EDGES MARKED IN BLACK.  THE RIGHT IMAGE IS THE QUANTIZED IMAGE.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-6')" href="#" xhref="#figVIII-6">FIGURE VIII-6</a></td>
+							<td>CONSTANT REPEATING TEXTURE USED TO DETERMINE THE FORM OF A NON-CONSTANT BLUR OPERATOR.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-7')" href="#" xhref="#figVIII-7">FIGURE VIII-7</a></td>
+							<td>BLUR VARIATION ALONG THE Y-AXIS.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-8')" href="#" xhref="#figVIII-8">FIGURE VIII-8</a></td>
+							<td>THE DOMAIN CONTOUR LENGTH AS A FUNCTION OF TIME FROM EXPERIMENT ET3-33A.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-9')" href="#" xhref="#figVIII-9">FIGURE VIII-9</a></td>
+							<td>PLOT OF LN(TIME) VS. LN(CONTOUR LENGTH) FROM EXPERIMENT ET3-33A. DATA POINTS ARE CIRCLES.  LEAST SQUARE FIT IS LINE.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figVIII-10')" href="#" xhref="#figVIII-10">FIGURE VIII-10</a></td>
+							<td>COMPARISON OF LEAST SQUARE FITS OF LN(TIME) VS. LN(EDGE COUNT) FOR VARIOUS EXPERIMENTS.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figIX-1')" href="#" xhref="#figIX-1">FIGURE IX-1</a></td>
+							<td>SCREEN SHOT OF THE IP PROGRAM GENERATING A SEQUENCE OF PROCESSED IMAGES.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('figIX-2')" href="#" xhref="#figIX-2">FIGURE IX-2</a></td>
+							<td>SCREEN SHOTS OF DIALOG BOXES FOR SETTING THE PARAMETERS OF VARIOUS PROCESSING ROUTINES.</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableI-A')" href="#" xhref="#tableI-A">TABLE I-A</a></td>
+							<td>SUMMARY OF STATE AND ORDER PARAMETERS FOR THE KNOWN PHASES.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableI-B')" href="#" xhref="#tableI-B">TABLE I-B</a></td>
+							<td>SUMMARY OF STATE AND ORDER PARAMETERS FOR THE CONJECTURED PHASES.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableVII-A')" href="#" xhref="#tableVII-A">TABLE VII-A</a></td>
+							<td>LISTED ARE SOME COMPOUNDS USED THROUGHOUT THIS WORK.  THE TYPE REFERS TO A GENERAL CLASSIFICATION SYSTEM.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableVII-B')" href="#" xhref="#tableVII-B">TABLE VII-B</a></td>
+							<td>ORDERING OF EFFECTIVE HEAD GROUP SIZE BASED ON L<sub>2</sub> PHASE SUPPRESSION.  TOP COMPARISON TAKES PRECEDENCE OVER THE LOWER COMPARISON.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableVIII-A')" href="#" xhref="#tableVIII-A">TABLE VIII-A</a></td>
+							<td>TYPICAL PARAMETER VALUES FOR AN IMAGE PROCESSING SEQUENCE.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableVIII-B')" href="#" xhref="#tableVIII-B">TABLE VIII-B</a></td>
+							<td>EXPERIMENTAL PARAMETERS FOR N-NONADECANOL QUENCHES.</td>
+						</tr>
+						<tr>
+							<td class="label"><a (click)="scrollTo('tableVIII-C')" href="#" xhref="#tableVIII-C">TABLE VIII-C</a></td>
+							<td>FIT DATA FOR LINEAR REGRESSION OF Y=Y0+N*X USING A TOLERANCE OF 0.000100, STEP SIZE OF 100, AND 100 ITERATIONS.</td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="acknowledgements" class="section">
+					<h3>ACKNOWLEDGEMENTS</h3>
+					<p>Dr. Charles Knobler, who placed learning and discovery above the system.  Dr. Andrea Liu, who is one of the best teachers of physics and chemistry that I have ever seen.  Dr. William Gelbart, who talked of why something was in addition to what it was.  Dr. James Heath, who looked at a problem in the ways that mattered.  And the U.C.L.A. Physical Chemistry division where understanding generally preceded territory.</p>
+					<p>In addition, I would like to acknowledge the National Science Foundation, North Atlantic Treaty Organization, Deutsche Forschungsgemeinschaft, and Sonderforschungsbereich for their financial support.  And the Laboratoire pour l'Utilisation du Rayonnement Electromagn&eacute;tique (LURE-DCI) and the Hamburger Synchrotronstrahlungslabor (HASYLAB) at the Deutsches Elektronen-Synchrotron DESY for beamtime and support.</p>
+					<p>Chapter II. - Reprinted with permission from JOURNAL OF CHEMICAL PHYSICS, AUG 8, 1995, V103(N6):2365-2368, Copyright 1995, American Institute of Physics.</p>
+					<p>Chapter III. -Reprinted with permission from JOURNAL OF CHEMICAL PHYSICS, FEB 1, 1997, V106(N5):1913-1920, Copyright 1997, American Institute of Physics.</p>
+					<p>Chapter IV. - Reprinted with permission from JOURNAL OF CHEMICAL PHYSICS, AUG 15, 2000, V113(N7):2846-2850, Copyright 2000, American Institute of Physics.</p>
+					<p>Chapter V. - Reprinted from COLLOIDS AND SURFACES A, Vol 171, Gary Marshall, Ellis Teer, Charles M. Knobler, Manfred Schalke, Mathias L&ouml;sche, Phase diagrams for monolayers of long-chain thioacetates, pp.41-48, Copyright (2000), with permission from Elsevier Science</p>
+					<p>Chapter VI. - Reproduced with permission from JOURNAL OF PHYSICAL CHEMISTRY B, NOV 2, 2000, V104(N43):10053-10058.  Copyright 2000 American Chemical Society.</p>
+				</div>
+
+				<div id="vitaAndPublications" class="section">
+					<h3>VITA</h3>
+					<br />
+					<table id="vita">
+						<tr>
+							<td>1991</td>
+							<td>B.S., University of Florida<br />Gainesville, Florida</td>
+						</tr>
+						<tr>
+							<td>1994</td>
+							<td>Teaching Assistant<br />University of California<br />Department of Chemistry and Biochemistry<br />Los Angeles, California</td>
+						</tr>
+						<tr>
+							<td>1995</td>
+							<td>Research Assistant<br />University of California<br />Department of Chemistry and Biochemistry<br />Los Angeles, California</td>
+						</tr>
+					</table>
+					<br />
+					<br />
+					<h3>PUBLICATIONS</h3>
+					<br />
+					<div class="publicationAuthors">Aug 8, 1995 - Fischer B; Teer E; Knobler CM</div>
+					<div class="publicationTitle">Optical measurements of the phase diagram of Langmuir monolayers of fatty acid-alcohol mixtures.</div>
+					<div class="publicationReference">JOURNAL OF CHEMICAL PHYSICS, AUG 8, 1995, V103(N6):2365-2368</div>
+					<div class="publicationAuthors">Feb 1, 1997 - Teer, E; Knobler, CM; Lautz, C; Wurlitzer, S; Kildae, J; Fischer, TM.</div>
+					<div class="publicationTitle">Optical measurements of the phase diagrams of Langmuir monolayers of fatty acid, ester, and alcohol mixtures by Brewster-angle microscopy.</div>
+					<div class="publicationReference">JOURNAL OF CHEMICAL PHYSICS, FEB 1, 1997, V106(N5):1913-1920</div>
+					<div class="publicationAuthors">Jan 30, 1997 - Roberts, MJ; Teer, EJ; Duran, RS.</div>
+					<div class="publicationTitle">Measurement of line tension from cell coalescence events in a Langmuir film.</div>
+					<div class="publicationReference">JOURNAL OF PHYSICAL CHEMISTRY B, JAN 30, 1997, V101(N5):699-701</div>
+
+					<div class="publicationAuthors">Aug 1997 - Fang, JY; Teer, E; Knobler, CM; Loh, KK; Rudnick, J.</div>
+					<div class="publicationTitle">Boojums and the shapes of domains in monolayer films.</div>
+					<div class="publicationReference">PHYSICAL REVIEW E, AUG, 1997, V56(N2):1859-1868</div>
+					<div class="publicationAuthors">Oct 10, 2000 - Marshall, C; Teer, E; Knobler, CM; Schalke, M; Losche, M.</div>
+					<div class="publicationTitle">Phase diagrams for monolayers of long-chain thioacetates.</div>
+					<div class="publicationReference">COLLOIDS AND SURFACES A-PHYSICOCHEMICAL AND ENGINEERING ASPECTS, OCT 10, 2000, V171(N1-3):41-48</div>
+					<div class="publicationAuthors">Aug 15, 2000 - Teer, E; Knobler, CM; Braslau, A; Daillant, J; Blot, C; Luzet, D; Goldmann, M; Fontiane, P.</div>
+					<div class="publicationTitle">Transition between two next-nearest-neighbor phases in a mixed Langmuir monolayer. A study by grazing-incidence x-ray diffraction and Brewster-angle microscopy.</div>
+					<div class="publicationReference">JOURNAL OF CHEMICAL PHYSICS, AUG 15, 2000, V113(N7):2846-2850</div>
+					<div class="publicationAuthors">Nov 2, 2000 - Teer, E; Knobler, CM; Siegel, S; Vollhardt, D; Brezesinski, G.</div>
+					<div class="publicationTitle">Grazing incidence diffraction and Brewster-angle microscope studies of mixtures of hexadecanoic acid and methyl hexadecanoate: The unexpected appearance of a phase with nearest-neighbor tilt.</div>
+					<div class="publicationReference">JOURNAL OF PHYSICAL CHEMISTRY B, NOV 2, 2000, V104(N43):10053-10058</div>
+					<br />
+				</div>
+
+				<div id="abstractOfTheDissertation" class="section">
+					<h3>ABSTRACT OF THE DISSERTATION</h3>
+					<p>The phase behavior and kinetics of selected amphiphilic Langmuir monolayers.</p>
+					<br />
+					<p>by</p>
+					<br />
+					<p>Ellis James Teer	</p>
+					<p>Doctor of Philosophy in Chemistry</p>
+					<p>University of California, Los Angeles, 2002</p>
+					<p>Professor Charles M. Knobler, Chair</p>
+					<br />
+					<p class="abstractText">Langmuir monolayers of pure compounds and mixtures of various acids, acetates, esters, thioic esters, and alcohols were studied.  In general, the phase diagram of each compound or mixture can be classified as one of two types or an intermediate of those two types.  The acids and acetates have a similar phase diagram, Type I, due to a large effective head group. The alcohols and most esters have a similar diagram, Type II, due to an effectively smaller head group.  The thioic esters studied and methyl hexadecanoate have intermediate behavior.  To first approximation, the two types of diagrams represent the extremes in effective head group size and differ primarily in the presence or absence of the L<sub>2</sub> phase, a phase with a large unit cell.  The effective size of the head group was shown to have a strong dependence upon the degree of hydrogen bonding with the water subphase.</p>
+					<p class="abstractText">New image processing methods were developed to study the kinetics of monolayer textures.  In preliminary experiments over short times with n-nonadecanol at room temperature, we find that the average growth in length of azimuthal tilt domains scales as <span class="equation">t<sup>n</sup></span> where <span class="equation">n=0.246 ≈ 1/4</span>.  The preliminary result of <span class="equation">n≈1/4</span> is consistent with late-time Rayleigh-Benard coarsening or a system with a non-conserved order parameter coarsening from a disordered phase to a striped phase.  The image processing methods developed are general and suitable for analysis of other systems.</p>
+					<br />
+
+				</div>
+			</div>
+
+			<div id="dissertationBody">
+				<div id="introduction" class="section">
+					<h3>Introduction</h3>
+					<div id="langmuirMonolayers" class="section">
+						<h3>Langmuir Monolayers</h3>
+						<p>A Langmuir monolayer is an insoluble layer of amphiphilic molecules at the air-water interface a single molecule thick. Such films are named for Irving Langmuir.  Langmuir and Harkins independently [<a (click)="scrollTo('ref1')" xhref="#ref1">1</a>,<a (click)="scrollTo('ref2')" xhref="#ref2">2</a>] demonstrated in 1917 that the films were a single molecule thick and proposed that the polar portion of each molecule pointed towards the water while the non-polar portion pointed away.</p>
+						<div class="figure" id="figI-1">
+							<a rel="gallery" title="Figure I-1	Schematic of a Langmuir Monolayer" href="assets/imgs/dissertation/monolayerRepresentation.gif"><img src="assets/imgs/dissertation/monolayerRepresentation.gif" alt="Figure I-1	Schematic of a Langmuir Monolayer" /></a>
+							<p class="caption">Figure I-1	Schematic of a Langmuir Monolayer</p>
+						</div>
+						<p>Not all amphiphilic compounds form Langmuir monolayers. When the attractive intermolecular forces are greater than polar interaction with the water surface the compound will not spread onto the surface.  The compounds used throughout this work are single chain aliphatic compounds or n-alkanoids.  They have a polar head group, a hydrophobic tail, and will be referred to as simple amphiphiles (see <a (click)="scrollTo('figI-2')" xhref="#figI-2">Figure I-2</a>).</p>
+						<p>In general compounds with a chain length less than 15 methylene units are soluble in a water subphase while those with greater than 26 do not spread or form lens on a water surface.</p>
+						<div class="figure" id="figI-2">
+							<a rel="gallery" title="Figure I-2	The space filling structure and identification of the head and tail group of compounds used in this work." href="assets/imgs/dissertation/generalCompoundStructures.gif"><img src="assets/imgs/dissertation/generalCompoundStructures.gif" alt="Figure I-2	The space filling structure and identification of the head and tail group of compounds used in this work." /></a>
+							<p class="caption">Figure I-2	The space filling structure and identification of the head and tail group of compounds used in this work.</p>
+						</div>
+					</div>
+
+					<div id="generalTechniques" class="section">
+						<h3>General Techniques</h3>
+
+						<p>Prior to the 1980's, information about monolayer phase behavior was from thermodynamic experiments, surface potential experiments, or theory.</p>
+						<p>Thermodynamic experiments were generally conducted by placing a monolayer at a fixed temperature, varying the area available on the surface of the water, and measuring the resulting surface pressure changes.  A plot of the pressure vs. area is called an isotherm.  It is a Π-Area slice through the three-dimensional phase space of Π-Area-Temperature for the compound where Π is the two-dimensional pressure or surface tension.  The slope of this plot is the compressibility and changes in the slope accompany a transition to a new phase or at the coexistence between two phases. Second-order phase transitions appear as kinks in the isotherm while first-order phase transitions or coexistence of two phases appear as flat regions. By conducting several isotherm measurements at different temperatures one can build a larger phase space and plot the generally more useful Π-Temperature diagram</p>
+						<p>In surface potential experiments, the monolayer is thought of as conductive plate parallel to the interface. Since amphiphilic are dipolar, variations in collective molecular orientation, which accompany a phase transition, result in different potentials.</p>
+						<div class="figure" id="figI-3">
+							<a rel="gallery" title="Figure I-3	General Isotherm plot showing several basic phases." href="assets/imgs/dissertation/generalIsothermSmall.gif"><img src="assets/imgs/dissertation/generalIsothermSmall.gif" alt="Figure I-3	General Isotherm plot showing several basic phases." /></a>
+							<p class="caption">Figure I-3	General Isotherm plot showing several basic phases.</p>
+						</div>
+						<p>Early experiments identified four distinct monolayer phases; gas (G), liquid-expanded (LE), liquid-condensed (LC), and solid (S) [<a (click)="scrollTo('ref1')" xhref="#ref1">1</a>,<a (click)="scrollTo('ref2')" xhref="#ref2">2</a>].  Later studies by Alexander, Stenhagen, Lundquist, and others found evidence in compressibility measurements that the liquid-condensed phase was in fact many separate phases. [<a (click)="scrollTo('ref3')" xhref="#ref3">3</a>-<a (click)="scrollTo('ref10')" xhref="#ref10">10</a>]</p>
+						<p>Experiments on Langmuir monolayers generally use a Teflon trough to contain the water and monolayer.  The troughs are often rectangular and made of Teflon to provide a chemically inert and hydrophobic surface. The thermodynamic conditions are set by circulating water through the trough's base and a moving barrier.  The barrier sweeps the surface and changes the area available and thus the two-dimensional pressure.  Different troughs often use varying barrier configurations such as the classic single barrier design shown in <a (click)="scrollTo('figI-4')" xhref="#figI-4">Figure I-4</a>, two barriers with opposing motion, or even circular compression using Teflon bands.</p>
+						<div class="figure" id="figI-4">
+							<a rel="gallery" title="Figure I-4	Schematic of a trough ..." href="assets/imgs/dissertation/generalTroughDiagram.gif"><img src="assets/imgs/dissertation/generalTroughDiagram.gif" alt="Figure I-4	Schematic of a trough used to control the thermodynamic conditions of a Langmuir monolayer." /></a>
+							<p class="caption">Figure I-4	Schematic of a trough used to control the thermodynamic conditions of a Langmuir monolayer.</p>
+						</div>
+						<p>The pressure is measured using a filter paper Wilhelmy balance.  A monolayer is generally prepared by placing drops of a volatile solution, typically Chloroform, of an amphiphile compound onto the water surface using a micro-syringe. The solvent quickly evaporates and the compound spreads.  The area per molecule is determined by measuring the trough's area, subtracting the area swept by the barrier(s), and then dividing by the known number of molecules deposited. The pressure Π is calculated by Π = Π<sub>0</sub> - Π where Π<sub>o</sub> is the surface tension of pure water and Π is the surface tension of the monolayer-covered water surface.</p>
+						<p>The phase behavior of a Langmuir monolayer can be explained by considering a collection of amphiphilic molecules bound to the water surface by their hydrophilic head groups. At low densities, these molecules spread out over the surface and on time average are not in contact with each other. They have a highly disordered structural conformation and both the head groups and tails are in contact with the water surface. This is called the gas phase. As the area is reduced the contact of the molecules is increased, the hydrophobic tails of the compound are no longer in contact with the water surface but are still disordered, and a liquid is formed. This is called the liquid expanded (LE) phase. Both the gas and LE phases are isotropic.  With continued reduction of area the hydrophobic tails must begin to pack largely in an extended all trans conformation, this is the liquid condensed (LC) region.  In the LC region as the area is further reduced, the molecules continue to pack in tighter but distinctly different manners yielding a variety of increasing packed phases.  As the area per molecule is reduced even further the molecules first crystallize, the condensed phase, and then are finally pushed out of the plane of the water surface, the collapsed state.</p>
+						<div class="figure" id="figI-5">
+							<a rel="gallery" title="Figure I-5	Schematic representation of the basic phases of a Langmuir monolayer." href="assets/imgs/dissertation/monolayerRepresentationOfPhases.gif"><img src="assets/imgs/dissertation/monolayerRepresentationOfPhases.gif" alt="Figure I-5	Schematic representation of the basic phases of a Langmuir monolayer." /></a>
+							<p class="caption">Figure I-5	Schematic representation of the basic phases of a Langmuir monolayer.</p>
+						</div>
+						<p>Isotherm measurements continue to be useful in modern experiments but have limitations.  In general, meticulous technique is required to detect certain phase transitions in the liquid-condensed region.  One particular transition went undetected, the L<sub>2</sub> / Ov transition, until 1993 [<a (click)="scrollTo('ref11')" xhref="#ref11">11</a>] because both phases have the same area per molecule and compressibility at the phase transition boundary.  In addition, thermodynamic techniques yield no direct molecular or mesophase structural information.</p>
+					</div>
+
+					<div id="opticalAndDiffreactionTechniques" class="section">
+						<h3>Optical And Diffraction Techniques</h3>
+						<p>The invention and application of new techniques such as fluorescence microscopy, Brewster-angle microscopy (BAM), Grazing Incidence X-ray diffraction (GIXD), second harmonic generation spectroscopy [<a (click)="scrollTo('ref12')" xhref="#ref12">12</a>,<a (click)="scrollTo('ref13')" xhref="#ref13">13</a>], and Fourier transform infrared reflection-absorption spectroscopy (IRRAS) revealed a wealth of new structural information and provided a basis for this work.  These optical or diffraction techniques, described below, use short wavelength energy that probes the monolayer at smaller, previously inaccessible, length scales.</p>
+						<p>Polarized Fluorescence and subsequently Brewster-angle microscopy are primarily sensitive to the tilt orientation of the hydrophobic tail of the molecule.  Unlike IRRAS and GIXD which have signals averaged over macroscopic areas these two techniques allow real space visualization of a monolayer over μm length scales.  These techniques lead to the surprising discovery of mesophases structures on the μm and larger length scales.</p>
+						<p>Based upon the work of Beaglehole [<a (click)="scrollTo('ref14')" xhref="#ref14">14</a>]; Möbius, Overbeck, and Hönig Göttingen [<a (click)="scrollTo('ref15')" xhref="#ref15">15</a>] and Meunier and Hénon in Paris [<a (click)="scrollTo('ref16')" xhref="#ref16">16</a>] built the first Brewster-angle microscopes.  When light is reflected from the interface between dielectric media then the polarization of the light is changed.  If the incident light is circularly polarized then the light becomes elliptically polarized and given the dielectric constant one can calculate the thickness of the interface or conversely the dielectric constant from the thickness, this is ellipsometry.  If however one uses light polarized in the incident plane (p-polarized) or perpendicular to the incident plane (s-polarized) the reflectivity varies with the angle of incidence.  For a given surface at a certain angle called the Brewster angle, reflection of p-polarized light is at a minimum.  By placing a polarizing element in the reflected light path that selects only for p-polarization one can remove the contribution of s-polarized light.</p>
+						<div class="figure" id="figI-6">
+							<a rel="gallery" title="" href="assets/imgs/dissertation/polarizedLightReflectanceOnWater.gif"><img src="assets/imgs/dissertation/polarizedLightReflectanceOnWater.gif" alt="Figure I-6	Definition of p- and s- polarized light and the reflective intensity off a surface as a function of incident angle. (Θ&lt;sub&gt;B&lt;/sub&gt; is the Brewster-angle)" /></a>
+							<a rel="gallery" title="" href="assets/imgs/dissertation/definitionOfPAndSPolarization.gif"><img src="assets/imgs/dissertation/definitionOfPAndSPolarization.gif" alt="Figure I-6	Definition of p- and s- polarized light and the reflective intensity off a surface as a function of incident angle. (Θ&lt;sub&gt;B&lt;/sub&gt; is the Brewster-angle)" /></a>
+							<p class="caption">Figure I-6	Definition of p- and s- polarized light and the reflective intensity off a surface as a function of incident angle. (Θ<sub>B</sub> is the Brewster-angle)</p>
+						</div>
+						<div class="figure" id="figI-7">
+							<a rel="gallery" title="Boojums" href="assets/imgs/dissertation/boojums_3_5_inches.gif"><img src="assets/imgs/dissertation/boojums_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<a rel="gallery" title="Mosaic" href="assets/imgs/dissertation/mosaic01_3_5_inches.gif"><img src="assets/imgs/dissertation/mosaic01_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<a rel="gallery" title="Stripes in Stripes" href="assets/imgs/dissertation/stripesInStripes_3_5_inches.gif"><img src="assets/imgs/dissertation/stripesInStripes_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<a rel="gallery" title="Scallops" href="assets/imgs/dissertation/scallops_3_5_inches.gif"><img src="assets/imgs/dissertation/scallops_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<a rel="gallery" title="Onions" href="assets/imgs/dissertation/onions_3_5_inches.gif"><img src="assets/imgs/dissertation/onions_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<a rel="gallery" title="Stepping Stones" href="assets/imgs/dissertation/steppingStonesLCLECoexistance_3_5_inches.gif"><img src="assets/imgs/dissertation/steppingStonesLCLECoexistance_3_5_inches.gif" alt="Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm." /></a>
+							<p class="caption">Figure I-7	Examples of textures we have seen by Brewster-angle microscopy.  The field of view is approximately 500µm and the white sizing bar is 100µm.</p>
+						</div>
+						<p>By changing the nature of the surface interface through the addition of a thin film, as is the case in Langmuir monolayers, the Brewster angle changes and thus the intensity of reflected light at that angle increases.  The now more intense reflected light has a p-polarized component due to the influence of the monolayer.  This reflected light can then be focused onto a camera and one can view differences in contrast due to varying thickness and molecular orientation. For a monolayer of uniform thickness, this allows the experimenter to see optical textures that are related to the molecular orientation.</p>
+						<p>Grazing Incidence X-Ray Diffraction is primarily sensitive to intermolecular structure.  By aligning a high intensity source of X-rays in a beam towards a monolayer covered water surface at a grazing angle of approximately 1° and collecting the scattered light one can directly probe the molecular phase structure and obtain information about the various degrees order present.  We will differ a discussion on the analysis of GIXD data until after reviewing the phase diagrams and structure of simple amphiphiles.</p>
+						<p>IRRAS produces a spectrum of the monolayer and has only recently been applied to monolayers at the air-water interface [<a (click)="scrollTo('ref17')" xhref="#ref17">17</a>,<a (click)="scrollTo('ref18')" xhref="#ref18">18</a>,<a (click)="scrollTo('ref19')" xhref="#ref19">19</a>].  The technique is particularly sensitive to the displacement of permanent bond dipole moments that yield information about the molecular conformation and head group interactions with the subphase.  IRASS can be used to determine the degree of hydrogen bonding and E/Z conformational structure of the head group.</p>
+					</div>
+
+					<div id="phaseDiagrams" class="section">
+						<h3>Phase Diagrams</h3>
+						<p>Simple amphiphiles like their liquid crystal counterparts have a surprising variety of phases. There are at least 10 different phases, possibly more. Using the nomenclature of Stenhagen, Lunquist [<a (click)="scrollTo('ref3')" xhref="#ref3">3</a>,<a (click)="scrollTo('ref4')" xhref="#ref4">4</a>,<a (click)="scrollTo('ref8')" xhref="#ref8">8</a>-<a (click)="scrollTo('ref10')" xhref="#ref10">10</a>,<a (click)="scrollTo('ref20')" xhref="#ref20">20</a>] there are the well documented CS, S, LS, L<sub>2</sub>″, L<sub>2</sub>′, L<sub>2</sub>, Ov, LE, and G phases.  Depending on the chain length and head group, some or all of these phases may be observable in the accessible regions of the phase diagram, <a (click)="scrollTo('figI-8')" xhref="#figI-8">Figure I-8</a>, for a particular amphiphile at any one time. </p>
+						<div class="figure" id="figI-8">
+							<a rel="gallery" title="Figure I-8	General phase diagram." href="assets/imgs/dissertation/phaseDiagramTypeISmall.gif"><img src="assets/imgs/dissertation/phaseDiagramTypeISmall.gif" alt="Figure I-8	General phase diagram." /></a>
+							<p class="caption">Figure I-8	General phase diagram.</p>
+						</div>
+						<p>To first approximation, the head group determines which phases may be observable while the chain length determines how those phases shift in temperature. Long chain lengths will shift the entire diagram right to higher temperatures. Short chain lengths shift the diagram left.  The shift is roughly 6K per methylene unit. So for example, when overlaying the diagrams for octadecanoic acid and heneicosanoic acid, the diagram for heneicosanoic acid would be shifted roughly 15K higher in temperature.</p>
+						<p>New phases are being discovered. Recently work by Durbin and Lautz [<a (click)="scrollTo('ref21')" xhref="#ref21">21</a>,<a (click)="scrollTo('ref22')" xhref="#ref22">22</a>] has shown that there is an additional intermediate tilt phase, I.  The phase divides the L<sub>2</sub>′ field into the I and L<sub>2</sub>′ phases.</p>
+					</div>
+
+					<div id="structuresOfThePhases" class="section">
+						<h3>Structure of The Phases</h3>
+						<p>The condensed phases (condensed and liquid condensed) have degrees of order not found in the gas and liquid expanded phases. In these phases, the molecular head groups are so closely packed on the interface surface that they form a hexagonal like structure.  The molecular tails are also constrained and adopt an all trans conformation.  One can imagine the resulting variety of phases by considering the possible combinations of head group packing with possible variations in tail tilt, direction, and rotational freedom.  We will define the interface surface or packing plane as the x-y plane, the magnitude of tilt as Θ, and the azimuthal direction of tilt as Φ.</p>
+						<div class="figure" id="figI-9">
+							<a rel="gallery" title="Definition of molecular axis" href="assets/imgs/dissertation/molecularOrientation.gif"><img src="assets/imgs/dissertation/molecularOrientation.gif" alt="Figure I-9	Definition of molecular axis (left) and hexatic axis (right)." /></a>
+							<a rel="gallery" title="Definition of heaxtic axis" href="assets/imgs/dissertation/hexaticAxis.gif"><img src="assets/imgs/dissertation/hexaticAxis.gif" alt="Figure I-9	Definition of molecular axis (left) and hexatic axis (right)." /></a>
+							<p class="caption">Figure I-9	Definition of molecular axis (left) and hexatic axis (right).</p>
+						</div>
+
+
+
+						<p>A useful division drawn from liquid crystal systems classifies the various degrees of order as Bond Orientational Order (BO), Tilt Orientational Order (TO), Positional Order (PO), and Herringbone Order (HO). [<a (click)="scrollTo('ref23')" xhref="#ref23">23</a>,<a (click)="scrollTo('ref24')" xhref="#ref24">24</a>,<a (click)="scrollTo('ref25')" xhref="#ref25">25</a>]  Bond Orientational Order is the degree to which the molecular centers are positioned at a set of fixed angles from each other.  Tilt Orientational Order is the degree of variation of the azimuthal direction of tilt, Φ, under translation.  Positional Order is the degree to which the molecular centers are positioned at equally spaced intervals.  And Herringbone Order is the tail's degree rotational freedom, whether the tails can be modeled as elliptical rods (pack in a herringbone pattern) or as circular rods.  In the isotropic gas and liquid expanded phases none of these orderings is present.</p>
+						<p>In the condensed phases BO is always quasi-long range following a power law decay, molecules are positioned along a well-defined angular axis.  This order is what gives rise to the variety of mesophases structures, or textures that persist over length scales of μm.  The axes are called the hexatic axes.</p>
+						<p>All the liquid condensed phases also have quasi-long range TO.  There are however differences in the values of Φ.  The tails can either be untilted or tilted with respect to the surface normal resulting in a division between untilted and tilted phases.  The tilted phases have a tilt angle that is dependent on the temperature, pressure, area available, and varies within a phase region.</p>
+						<p>Positional Order is either quasi-long range, following a power law decay, or short range, following an exponential decay.  The crystalline phases, CS and L<sub>2</sub>″, have quasi-long range PO.  As opposed to 3-D systems it is possible to have a phase with quasi-long range BO while having short range PO [<a (click)="scrollTo('ref26')" xhref="#ref26">26</a>,<a (click)="scrollTo('ref27')" xhref="#ref27">27</a>].  In this cases, the molecules are positioned along well defined axis but do not preserve positional translation along those axis. Phases which have quasi-long range BO, short range PO, and a hexagonal symmetry (a six-fold orientational order) are called hexatic [<a (click)="scrollTo('ref26')" xhref="#ref26">26</a>,<a (click)="scrollTo('ref28')" xhref="#ref28">28</a>].  These phases include S, LS, L<sub>2</sub>′, L<sub>2</sub>, and Ov.</p>
+						<div class="figure" id="figI-10">
+							<a rel="gallery" title="Figure I-10	Schematic of nearest neighbor (NN) and next nearest neighbor (NNN) tilt in a condensed phase." href="assets/imgs/dissertation/neighborDiagram.gif"><img src="assets/imgs/dissertation/neighborDiagram.gif" alt="Figure I-10	Schematic of nearest neighbor (NN) and next nearest neighbor (NNN) tilt in a condensed phase." /></a>
+							<p class="caption">Figure I-10	Schematic of nearest neighbor (NN) and next nearest neighbor (NNN) tilt in a condensed phase.</p>
+						</div>
+						<p>The azimuthal tilt is defined relative to the hexatic axis. In tilted condensed phases Φ is either 0°, 30°, or in the case of the I phase an intermediate value. When <span class="equation">Φ = 0°</span>, the tilt is towards the nearest molecular neighbor and when <span class="equation">Φ = 30°</span>, the tilt is towards the next nearest molecular neighbor.  Phases can therefore be distinguished as nearest neighbor (NN) or next nearest neighbor (NNN) phases, depending on the azimuthal direction of the tilt.</p>
+						<div class="figure" id="figI-11">
+							<a rel="gallery" title="Figure I-11	Schematic of Herringbone Order (HO" href="assets/imgs/dissertation/herringboneDiagram.gif"><img src="assets/imgs/dissertation/herringboneDiagram.gif" alt="Figure I-11	Schematic of Herringbone Order (HO)." /></a>
+							<p class="caption">Figure I-11	Schematic of Herringbone Order (HO).</p>
+						</div>
+						<p>At higher temperatures and areas the tails are free to rotate and can be effectively modeled as rods. As the temperature or area is reduced, the tail rotation is restricted. The tails in this case can be modeled as elliptical rods and pack in a herringbone pattern. This is referred to as Herringbone Order (HO). This structure can by ordered in one or two dimensions. In a one-dimensional order the row spacing has quasi-long range order but there is only short range translation order within a row. In a two-dimensional crystal, both are quasi-long range.</p>
+						<div class="table" id="tableI-A">
+							<table>
+								<thead>
+									<tr><td>Phase</td><td>Tilt</td><td>Crystallization</td><td>PO</td><td>BO</td><td>TO</td><td>HO</td><td>&Phi;</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>CS</td><td>untilted</td><td>Crystal</td><td>long</td><td>long</td><td>long</td><td>yes, 2D</td><td>-</td></tr>
+									<tr><td>S</td><td>untilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>yes, 1D</td><td>-</td></tr>
+									<tr><td>LS</td><td>untilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>no?</td><td>-</td></tr>
+									<tr><td>L<sub>2</sub>"</td><td>tilted</td><td>Crystal</td><td>long</td><td>long</td><td>long</td><td>yes, 2D</td><td>NN</td></tr>
+									<tr><td>I</td><td>tilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>yes, 1D</td><td>I</td></tr>
+									<tr><td>L<sub>2</sub>'</td><td>tilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>yes, 1D</td><td>NNN</td></tr>
+									<tr><td>L<sub>2</sub></td><td>tilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>no?</td><td>NN</td></tr>
+									<tr><td>Ov</td><td>tilted</td><td>Hexatic</td><td>short</td><td>long</td><td>long</td><td>no</td><td>NNN</td></tr>
+									<tr><td>LE</td><td>disordered</td><td>Isotropic</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+									<tr><td>G</td><td>disordered</td><td>Isotropic</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table I-A	Summary of state and order parameters for the known phases.</p>
+						</div>
+						<div class="table" id="tableI-B">
+							<table>
+								<thead>
+									<tr><td>Phase</td><td>Tilt</td><td>Crystallization</td><td>PO</td><td>BO</td><td>TO</td><td>HO</td><td>&Phi;</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>L<sub>2d</sub></td><td>tilted</td><td>hexatic</td><td>short</td><td>long</td><td>long</td><td>yes, 1D</td><td>NN</td></tr>
+									<tr><td>L<sub>2h</sub></td><td>tilted</td><td>hexatic</td><td>short</td><td>long</td><td>long</td><td>no</td><td>NN</td></tr>
+									<tr><td>LSr1</td><td>untilted</td><td>hexatic</td><td>short</td><td>long</td><td>long</td><td>yes, 1D</td><td>-</td></tr>
+									<tr><td>LSr2</td><td>untilted</td><td>hexatic</td><td>short</td><td>long</td><td>long</td><td>no</td><td>-</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table I-B	Summary of state and order parameters for the conjectured phases.</p>
+						</div>
+						<p>As a result of a Landau theory treatment that has been developed by Kaganer and collaborators, discussed more fully in later chapters, it is conjectured that a line drawn from top to bottom divides the LS and the L<sub>2</sub> phase into the LS<sub>rI</sub>, LS<sub>rII</sub>, L<sub>2d</sub>, and L<sub>2h</sub> phases in Type I compounds or the LS<sub>r1</sub>, LS<sub>r2</sub>, L<sub>2</sub>′, and Ov phases in Type II compounds. To the left of this line there is one-dimensional herringbone order, to the right there is no herringbone order.</p>
+					</div>
+
+					<div id="gixdDataAnalysisOfTheCondensedPhases" class="section">
+						<h3>GIXD Data Analysis Of The Condensed Phases</h3>
+						<p>By aligning a high intensity source of X-rays in a beam towards a monolayer covered water surface at a grazing angle of approximately 1° and collecting the scattered light one can determine the momentum transfer vector K.</p>
+						<p>The scattering pattern in reciprocal space is the product of structure factor and the form factor. The structure of a two-dimensional hexagonal lattice in reciprocal space is a set of delta functions along the lines normal to the monolayer plane. These lines are called "Bragg rods". The form factor of an extended chain or long rod is an oblate spheroid. The sphere has values large only along a disk normal to its axis. This is called the reciprocal disk. Their intersection or product gives rise to three pairs of maxima <span class="equation">±K<sub>1</sub>, ±K<sub>2</sub>, ±K<sub>3</sub></span>. These are the six wave vectors of the first-order diffraction peaks.  In the liquid condensed phases, molecules are close packed in a two-dimensional hexatic lattice.  In addition, each molecule is in an all trans conformation so that its chain is structurally similar to a long rod.</p>
+						<p>Because the "crystals" in a monolayer are much smaller than the imaging area of the diffraction spot, the signal due to the <span class="equation">K<sub>x</sub></span> and <span class="equation">K<sub>y</sub></span> components are averaged together by <span class="equation">K<sub>xy</sub> = (K<sub>x</sub><sup>2</sup> + K<sub>y</sub><sup>2</sup>)<sup>½</sup></span>. Only the <span class="equation">K<sub>z</sub></span> wave vector is directly measurable.</p>
+						<p>For an untilted monolayer in an undistorted lattice, the six wave vectors are degenerate. Only one peak in the scattering pattern will be seen. This degeneracy can be lifted by either distorting the real space unit cell or tilting the real space molecular chains. Distortion alters the <span class="equation">K<sub>x</sub></span> and <span class="equation">K<sub>y</sub></span> wave vectors, while tilting changes the <span class="equation">K<sub>z</sub></span> wave vector.</p>
+						<p>Distortion of a liquid condensed phase occurs in one of two ways. If the unit cell is represented by a real space hexagon formed by a close packed structure, then the distance between two opposite molecules in the hexagon can be increased (stretching) or reduced (shrinking). In either case, the scattering pattern in reciprocal space is represented by two distinct peaks. One of which is actually two peaks and degenerate and the other of which is a single peak. The non-degenerate pair of wave vectors is termed <span class="equation">±K<sub>n</sub></span> and the other two pairs of wave vectors are termed <span class="equation">±K<sub>d</sub></span>. When the cell is stretched <span class="equation">|K<sub>n</sub>| &gt; |K<sub>d</sub>|</span>, when the cell is shrunk <span class="equation">|K<sub>n</sub>| &lt; |K<sub>d</sub>|</span>.</p>
+						<p>Molecular tilt depends on the magnitude and the direction.  The real space tilt of the molecular chains corresponds to a tilt of the reciprocal disk.</p>
+						<div class="figure" id="figI-12">
+							<a rel="gallery" title="Figure I-12	Scattering peaks ..." href="assets/imgs/dissertation/xrayTiltUntiltedSignal.gif"><img src="assets/imgs/dissertation/xrayTiltUntiltedSignal.gif" alt="Figure I-12	Scattering peaks of: a) Untilted molecules with a hexagonal unit cell and distortion in the NNN direction. B) Tilt and hexagonal unit cell distortion in the NN direction." /></a>
+							<p class="caption">Figure I-12	Scattering peaks of: a) Untilted molecules with a hexagonal unit cell and distortion in the NNN direction. B) Tilt and hexagonal unit cell distortion in the NN direction.</p>
+						</div>
+						<p>In general, since the intersection of the reciprocal disk and the Bragg rods has three distinct points there are three first-order peaks corresponding to the three wave vector pairs. This is the case in intermediate tilt monolayer phases. If however the tilt is in the direction of one of the Bragg rods there will only be two peaks one of which will be degenerate. This is the case with molecular chains pointed towards NN and NNN. The tilt angle can be directly calculated from the scattering peaks, <span class="equation">tanθ = K<sub>dz</sub> / ( K<sub>dxy</sub><sup>2</sup> - ( K<sub>nxy</sub> / 2 )<sup>2</sup> )<sup>½</sup></span>.</p>
+					</div>
+
+				</div>
+
+				<div id="opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidAlcoholMixtures" class="section">
+					<h3>II. - Optical measurements of the phase diagram of Langmuir monolayers of fatty acid-alcohol mixtures</h3>
+					<p class="chapterInclusionNote">This chapter was reprinted verbatim from an earlier journal publication of the same title.</p>
+				</div>
+
+				<div id="opticalMeasurementsOfThePhaseDiagramOfLangmuirMonolayersOfFattyAcidEsterAlcoholMixtures" class="section">
+					<h3>III. - Optical measurements of the phase diagram of Langmuir monolayers of fatty acid, ester, and alcohol mixtures by Brewster-angle microscopy</h3>
+					<p class="chapterInclusionNote">This chapter was reprinted verbatim from an earlier journal publication of the same title.</p>
+				</div>
+
+				<div id="transitionBetweenTwoNextNearestNeighborPhases" class="section">
+					<h3>IV. - Transition between two next-nearest-neighbor phases in a mixed Langmuir monolayer.  A study by grazing-incidence x-ray diffraction and Brewster-angle microscopy</h3>
+					<p class="chapterInclusionNote">This chapter was reprinted verbatim from an earlier journal publication of the same title.</p>
+				</div>
+
+				<div id="phaseDiagramsForMonolayersOfLongChainThioacetates" class="section">
+					<h3>V. - Phase diagrams for monolayers of long-chain thioacetates</h3>
+					<p class="chapterInclusionNote">This chapter was reprinted verbatim from an earlier journal publication of the same title.</p>
+				</div>
+
+				<div id="unexpectedAppearanceOfAPhaseWithNearestNeighborTilt" class="section">
+					<h3>VI. - Grazing Incidence Diffraction and Brewster-Angle Microscope Studies of Mixtures of Hexadecanoic Acid and Methyl Hexadecanoate:  The Unexpected Appearance of a Phase with Nearest-Neighbor Tilt</h3>
+					<p class="chapterInclusionNote">This chapter was reprinted verbatim from an earlier journal publication of the same title.</p>
+				</div>
+
+				<div id="additionalFindingsAndAnalysisOfLangmuirMonolayersAtEquilibrium" class="section">
+					<h3>VII. - Additional Findings and Analysis of Langmuir Monolayers at Equilibrium</h3>
+					<div id="AFintroduction" class="section">
+						<h3>Introduction</h3>
+						<p>The papers that form the preceding chapters form a body of knowledge about the relation between phase diagrams and molecular structure.  In the following chapter, we will highlight aspects of this and make additional comments about the relation between this work and Landau theory analysis.</p>
+					</div>
+					<div id="AFtypesOfPhaseDiagrams" class="section">
+						<h3>Types Of Phase Diagrams</h3>
+						<div class="figure" id="figVII-1">
+							<a rel="gallery" title="Figure VII-1	General Type I phase diagram." href="assets/imgs/dissertation/phaseDiagramTypeISmall.gif"><img src="assets/imgs/dissertation/phaseDiagramTypeISmall.gif" alt="Figure VII-1	General Type I phase diagram." /></a>
+							<p class="caption">Figure VII-1	General Type I phase diagram.</p>
+						</div>
+						<div class="table" id="tableVII-A">
+							<a rel="gallery" title="Table VII-A	Listed are some compounds used throughout this work." href="assets/imgs/dissertation/compoundsUsed.gif"><img src="assets/imgs/dissertation/compoundsUsed.gif" alt="Table VII-A	Listed are some compounds used throughout this work.  The type refers to a general classification system." /></a>
+							<p class="caption">Table VII-A	Listed are some compounds used throughout this work.  The type refers to a general classification system.</p>
+						</div>
+
+						<p>The study of compounds used throughout this work, <a (click)="scrollTo('tableVII-A')" xhref="#tableVII-A">Table VII-A</a>, or mixtures of those compounds indicates that a particular compound or mixture has a phase diagram that can be classified as one of two types, or a combination of those two types.  We will refer to those two types as Type I and Type II.</p>
+						<p>In general, the acids and acetates have a similar Type I phase diagram, <a (click)="scrollTo('figVII-1')" xhref="#figVII-1">Figure VII-1</a>.  This same diagram is qualitatively similar to the diagram for short chain length acids and acetates.  Note that since the pure water subphase freezes at 0°C, and observations more than a few degrees below that temperature are virtually impossible, phases like the CS and L<sub>2</sub>″ are no longer observable.</p>
+						<p>We have also made BAM observations of long chain lengths at low temperatures. At these conditions, the system becomes very 'slow' to respond and develops one or several regions of texture rearrangement similar to those seen in other phase transitions inhomogeneously across the surface. Without diffraction experiments, it is unclear if these are slow transitions to a new phase or a type of collapse.</p>
+						<p>The alcohols and esters have qualitatively similar diagrams that we refer to as Type II, <a (click)="scrollTo('figVII-2')" xhref="#figVII-2">Figure VII-2</a>.</p>
+
+						<div class="figure" id="figVII-2">
+							<a rel="gallery" title="Figure VII-2	General Type II phase diagram." href="assets/imgs/dissertation/phaseDiagramTypeIISmall.gif"><img src="assets/imgs/dissertation/phaseDiagramTypeIISmall.gif" alt="Figure VII-2	General Type II phase diagram." /></a>
+							<p class="caption">Figure VII-2	General Type II phase diagram.</p>
+						</div>
+
+						<p>The most notable difference between the two types of diagrams is the absence of the L<sub>2</sub> phase.  To first approximation, the two types of diagrams represent the extremes in head group size.  Compounds with effectively large head groups due to purely steric interactions, conformational arrangement, and/or strong hydrogen bonding with the water subphase, exhibit Type I behavior.  While compounds at the other extreme, with effectively small head groups such as alcohols or esters in an E conformation, exhibit Type II behavior.</p>
+						<p>Mixtures and monolayers of pure compounds such as the thioic esters and methyl hexadecanoate can exhibit behavior intermediate between these two Types.  Several thioic esters were synthesized which conceptually represented the corresponding acetate with the carbonyl oxygen replaced with sulfur.  This in effect turned off hydrogen bonding and dramatically decreased the effective head group size while slightly increasing the size due to steric interactions.</p>
+						<p>One compound studied is not easily assigned one of these two Types or an intermediate, methyl hexadecanoate.  This compound has a phase diagram that looks to be Type II but it has a tilted phase that is NN and not NNN.  Here the high temperature stability of the NN phase is associated with disorder in the chain ends, which plays a larger role in short chain length compounds.  This effect can be seen in other compounds where the stability of the Ov phase and area of the field reduces with decreasing chain length.</p>
+						<p>It is likely that these two Types of phases diagrams are not the extreme or only cases.  However, we can order these compounds by their effective head group size based on the point at which the L<sub>2</sub> phase is suppressed by in a mixture of the corresponding acid, a large effective headgroup.</p>
+
+						<div class="table" id="tableVII-B">
+							<table>
+								<thead>
+									<tr><td></td></tr>
+								</thead>
+								<tbody>
+									<tr><td>Acids, Acetates &gt; Thioic Esters &gt; Methyl Esters &gt; Alcohol &gt; Ethyl Ester &gt; Propyl Ester</td></tr>
+									<tr><td>Small chain length &gt; Larger chain length</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table VII-B	Ordering of effective head group size based on L<sub>2</sub> phase suppression.  Top comparison takes precedence over the lower comparison.</p>
+						</div>
+
+						<p>The acids and the acetates are Type I.  The thioic esters are intermediate.  Short chain length methyl esters are intermediate or possibly of a different Type.  Longer chain length methyl esters, other esters, and alcohols are Type II.  To a lesser degree than the head group, chain length increases or decreases the effective head group size.  Long chain lengths with more chain-chain interactions decrease hydrogen bounding.  In the case of the methyl esters chain length is shown to substantially change the phase diagram.</p>
+						<p>There are a number of subtleties when comparing these phase diagrams that arise from differences in the compressibility of the head group.</p>
+						<p>The phase line from the tilted to the untilted phase is generally at a higher pressure in Type I than in Type II compounds.  The same phase line is at higher pressure with decreasing chain length in Type I compounds.  This is presumably due to a reduced effective head group size as chain-chain interactions reduce hydrogen bonding.</p>
+						<p>The magnitude of the temperature shift depends not only on the difference in chain length but on which chain lengths and compounds are in question.  For example, the shift between octadecanoic acid (C18A) and nonadecanoic acid (C19A) is slightly more than the shift between nonadecanoic acid and (C19A) and eicosanoic acid (C20A).</p>
+					</div>
+
+					<div id="AFanalysis" class="section">
+						<h3>Analysis</h3>
+						<p>In the following analysis, our goal is to understand the factors that control the appearance of the non-crystalline NN and NNN tilted phases.  In particular, we know that for pure compounds non-crystalline NN phases have only been found in acids, acetates, thiols, and one ester, methyl hexadecanoate.  The alcohols and all but one ester do not have a non-crystalline NN tilt phase.  We know as well that when we mix a substance that has a NN phases with one that does not, there is a regular change in the phase diagram: the L<sub>2</sub>′/L<sub>2h</sub> boundary moves towards higher T and lower &pi;; the Ov/L<sub>2d</sub> boundary moves towards lower T and lower &pi;; the L<sub>2</sub>′ and Ov phase boundaries eventually touch and the NN phase is driven to zero pressure.</p>
+						<p>We see this regular behavior when we keep the chain lengths of the amphiphiles constant but change the head groups, for example when mixing heneicosanoic (C21) acid with heneicosanol.  This suggests that we should be able to understand these phenomena in terms of head group size which may affect properties of the monolayers such as tilt angle or chain packing.</p>
+						<p>We can be guided in our analysis by our experiments, by GID studies and by the Landau theory treatment that has been developed by Kaganer and collaborators.  The Landau theory, which is based primarily on the GID studies, seeks to describe the free energy of the monolayer in terms of several order parameters that have been chosen to account for the phase diagram and which satisfy various symmetry conditions.  It is a thermodynamic and not molecular structure.  Kaganer has identified several significant order parameters:</p>
+						<p>η = tilt order parameter = sin θ</p>
+						<p>ξ = distortion order parameter</p>
+						<p>ε<sub>xx</sub> – ε<sub>yy</sub> = ξ cos 2ω</p>
+						<p>2 ε<sub>xy</sub> = ξ sin 2ω</p>
+						<p>Where <span class="equation">θ</span> is the angle with respect to the surface normal, <span class="equation">ε<sub>ij</sub></span> is the strain tensor, and <span class="equation">ω</span> is the direction of the distortion.</p>
+						<p>φ = herringbone order parameter</p>
+						<p>h = hexatic order parameter</p>
+						<p>h<sub>x</sub> = h cos 6γ</p>
+						<p>h<sub>y</sub> = sin 6γ</p>
+						<p>Where <span class="equation">φ</span> is the amplitude of a 1-D crystallization wave and <span class="equation">γ</span> is the azimuth of hexatic order.</p>
+					</div>
+
+					<div id="AFfreeEnergyInTermsOfOrderParameters" class="section">
+						<h3>Free Energy in Terms of Order Parameters</h3>
+						<p>The free energy of the monolayer can then be written in terms of a power series in the order parameters including cross terms that represent couplings between them and the phase transitions can be identified by examining minima in the free energy as a function of the order parameters.</p>
+
+						<div class="figure" id="figVII-3">
+							<a rel="gallery" title="Figure VII-3	Highly schematic phase diagram." href="assets/imgs/dissertation/sketchOfPhaseBoundaries.png"><img src="assets/imgs/dissertation/sketchOfPhaseBoundariesSmall.png" alt="Figure VII-3	Highly schematic phase diagram." /></a>
+							<p class="caption">Figure VII-3	Highly schematic phase diagram.</p>
+						</div>
+
+						<p>Consider the highly schematic boundaries in <a (click)="scrollTo('figVII-3')" xhref="#figVII-3">Figure VII-3</a>.  The sequence of transitions R<sub>II</sub> ⇒ Ov ⇒ L<sub>2d</sub> from the untilted hexatic phase R<sub>II</sub> to the NNN tilted hexatic phase Ov to the NN tilted hexatic phase L<sub>2d</sub> is ascribed to the tilt and the coupling between tilt and hexatic order.</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 1)</p>
+							<p>Φ<sub>1</sub> = Φ<sub>η</sub> + Φ<sub>ηh</sub> = Aη<sup>2</sup> +Bη<sup>4</sup> – Dhη<sup>6</sup> cos 6(β - γ)	+ Eh<sup>2</sup>η<sup>12</sup> cos 12(β - γ) + Cξ<sup>2</sup> – Vξη<sup>2</sup> cos 2(β – ω)</p>
+						</div>
+
+						<p>Thermodynamic stability requires <span class="equation">B&gt;0</span>.  It is observed experimentally that the R<sub>II</sub> ⇒ Ov transition is second order.</p>
+
+						<p>When <span class="equation">A&gt;0</span>, Equation 1 gives <span class="equation">η=0</span> and for <span class="equation">A&lt;0, η<sup>2</sup> = -A/2B</span>, so the transition corresponds to <span class="equation">A=0</span>.  The tilt azimuth is determined by the signs of <span class="equation">D</span> and <span class="equation">E</span>.  For <span class="equation">D&gt;0</span> and <span class="equation">E&gt;0</span>, the minimum in <span class="equation">Φ</span> occurs at <span class="equation">β – γ = π/6</span>, correspondingly to NNN tilt.  Thus in the Ov phase <span class="equation">D&lt;0</span> while in L<sub>2d</sub> <span class="equation">D&gt;0</span>.  The transtition Ov ⇒ L<sub>2d</sub> therefore corresponds to <span class="equation">D=0</span>.  It is continuous.  If <span class="equation">E&lt;0</span>, the transition occurs via a phase of intermediate tilt, which we will not consider here.</p>
+
+						<p>As a result of the tilt, there is a distortion in the Ov and L<sub>2d</sub> phases so the free energy must contain a term that arises from this coupling.  To lowest order this is given by</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 2)</p>
+							<p>Φ<sub>ηξ</sub> 	= – Vξη<sup>2</sup> cos 2(β – ω)</p>
+						</div>
+
+						<p>For <span class="equation">V&gt;0</span>, the minimum occurs at <span class="equation">ω = β</span>, which corresponds to distortion in the direction of the tilt; for <span class="equation">V&lt;0</span>, the minimum is at <span class="equation">ω = β + π/2</span> and the distortion is in a direction perpendicular to the tilt.  GID measurements on the Ov and L<sub>2d</sub> phases show that <span class="equation">ω = β</span>, so <span class="equation">V&gt;0</span>.  The term <span class="equation">Cξ<sup>2</sup></span> is <span class="equation">Φ<sub>ξ</sub></span>, the lowest-order term in the free energy associated with the tilt alone.</p>
+
+						<p>Next we consider the transitions S ⇒ L<sub>2</sub>′ ⇒ L<sub>2</sub>, which must include in addition terms involving the herringbone order parameter φ.</p>
+
+						<p>The free energy is then given by:</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 3)</p>
+							<p>Φ<sub>2</sub> 	= Φ<sub>1</sub> + Φ<sub>φ</sub> + Φ<sub>φη</sub> + Φ<sub>φξ</sub> + Φ<sub>hφ</sub> = Φ<sub>1</sub> + Fφ<sup>2</sup> + Gφ<sup>4</sup> + Jφ<sup>2</sup>η<sup>2</sup> cos 2(β – δ) – uφ<sup>2</sup>ξ cos 2(ω – δ) – Hφ<sup>2</sup>h cos 6(γ – δ)</p>
+						</div>
+
+						<p>If <span class="equation">B&lt;0</span>, the free energy expansion in <span class="equation">η<sup>2</sup></span> must include an <span class="equation">η<sup>6</sup></span> term to insure thermodynamic stability.</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 1’)</p>
+							<p>Φ 	= Aη<sup>2</sup> + Bη<sup>4</sup> + Mη<sup>6</sup></p>
+						</div>
+
+						<p>Minimization with respect to <span class="equation">η<sup>2</sup></span> gives:</p>
+
+						<p>When <span class="equation">A=0</span> there are two solutions <span class="equation">η<sup>2</sup> = 0</span> and <span class="equation">η<sup>2</sup> = -2B/3M</span> so there is a first-order transition rather than a continuous transition.</p>
+
+						<p>It is assumed that in the S phase one-dimensional herringbone order arises at the S/R<sub>I</sub> boundary.  If we examine the <span class="equation">φ</span> dependent terms in Equation 2 we arrive at the following,</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 4)</p>
+							<p>Φ 	= Fφ<sup>2</sup> + Gφ<sup>4</sup> + |U|φ<sup>2</sup>ξ - |H|φh<sup>2</sup></p>
+						</div>
+
+						<p>where the signs of <span class="equation">U</span> and <span class="equation">H</span> depend on the arguments in the cosine terms, which will be determined below.</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 5)</p>
+							<p>Φ 	= (F - |U|ξ - |H|h) φ<sup>2</sup> + Gφ<sup>4</sup> = F’φ<sup>2</sup> + Gφ<sup>4</sup></p>
+						</div>
+
+						<p>When <span class="equation">F’</span> changes sign there is a 2<sup>nd</sup> order transition from a phase (R<sub>I</sub>) in which <span class="equation">φ=0</span> to a phase (S) in <span class="equation">φ=(-F/2G)<sup>½</sup></span>.</p>
+
+						<p>The tile-dependent terms in Equation 2</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 6)</p>
+							<p>Φ 	= Aη<sup>2</sup> + Bη<sup>4</sup> +	Jφ<sup>2</sup>η<sup>2</sup> cos 2(β – δ) – Vξη<sup>2</sup> cos 2(ω – β)</p>
+						</div>
+
+						<p>determine the location of the S/L<sub>2</sub>′ transition.  Collecting the terms gives</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 7)</p>
+							<p>Φ 	= [A + Bη<sup>2</sup> + Jφ<sup>2</sup> cos 2(β – δ) – Vξ cos 2(β – ω)]η<sup>2</sup> + Bη<sup>4</sup></p>
+						</div>
+
+						<div class="equation">
+							<p class="caption">(Eq. 8)</p>
+							<p>Φ 	= A″η<sup>2</sup> + Bη<sup>4</sup></p>
+						</div>
+
+						<p>So, again, there is a 2nd order transition when <span class="equation">A″=0</span>.  Note that this is not the point at which the R<sub>II</sub>/Ov transition occurs because <span class="equation">A≠A″</span>.</p>
+
+						<p>It is observed from GID studies that the herringbone order direction is perpendicular to the tilt direction <span class="equation">β – δ = π/2</span> and </p>
+
+						<p><span class="equation">-Hφ<sup>2</sup>h cos 6(γ – δ) = Hφ<sup>2</sup>h cos 6(β – γ)</span></p>
+
+						<p>The transition from L<sub>2</sub>′ to L<sub>2h</sub> is then controlled by the two terms</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 9)</p>
+							<p>Φ 	= Hφ<sup>2</sup>hcos 6(β – γ) – Dhη<sup>6</sup> cos 6(β – γ) = (Hφ<sup>2</sup> – Dη<sup>6</sup>) h cos 6(β – γ)</p>
+						</div>
+
+						<p>and the transition therefore occurs on the line</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 10)</p>
+							<p>Hφ<sup>2</sup> – Dη<sup>6</sup> = 0</p>
+						</div>
+
+						<p>The distortion in the L<sub>2h</sub> phase is connected to both tilt and the herringbone order.  Consider the terms in the free energy involving <span class="equation">ξ</span>:</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 11)</p>
+							<p>Φ 	= Cξ<sup>2</sup> – Uφ<sup>2</sup>ξ cos 2(ω – δ) – Vξη<sup>2</sup> cos 2(β – ω) =  Cξ<sup>2</sup> + (Uφ<sup>2</sup> - Vη<sup>2</sup>) ξ cos 2(β – ω) </p>
+						</div>
+
+						<p>Here we have used the relation between <span class="equation">β</span> and <span class="equation">δ</span> given above.  From the previous analysis we <span class="equation">C&gt;0</span>, <span class="equation">U&gt;0</span>, and <span class="equation">V&gt;0</span> so the relation between <span class="equation">β</span> and <span class="equation">ω</span> is determined be the sign of the term in parentheses.  At small tilt angles the term <span class="equation">Uφ<sup>2</sup></span> dominates and <span class="equation">β – ω = π/2</span>, while at larger values of <span class="equation">η</span> the term in parentheses is negative and the free energy is minimized by <span class="equation">β = ω</span>, thus the transition from distortion perpendicular to the tilt direction to distortion parallel to the tilt direction occurs at</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 12)</p>
+							<p>Uφ<sup>2</sup> - Vη<sup>2</sup> = 0</p>
+						</div>
+
+						<p>At which point the cell is hexagonal (undistorted).  This occurs at a value of the tilt order parameter <span class="equation">η<sub>0</sub> = (U/V)<sup>½</sup>φ</span>.</p>
+
+						<p>A consequence of Equations 10 and 11 is the requirement that both the L<sub>2</sub>′/L<sub>2</sub> transition lines and the zero-distortion lines end at <span class="equation">φ=0</span> and <span class="equation">η=0</span> which for example is at the intersection of the LS/R<sub>I</sub> line with the tilted-untilted transition line.</p>
+
+						<p>So far, we have treated the R<sub>I</sub> phase as having no distortion, but this phase, which was identified by GID measurements on heneicosanoic acid, has a distorted hexagonal structure.  The origin of this distortion is not clear.  If, as Kaganer and collaborators argue, the herringbone order first appears in the S phase, the distortion in the R<sub>I</sub> phase cannot be attributed to herringbone order.</p>
+
+						<p>BAM studies of the tilting transition from the LS phase show that it is first order at low temperature and second order at high temperature.  An explanation for this change is that the first-order transitions occur from the R<sub>I</sub> phase.  We can examine this possibility by determining the effect of distortion on the tilting transition when there is no herringbone order.  This possibility has been discussed by Kaganer and Indenboom.</p>
+
+						<p>Following them, we consider the effect of higher-order terms in the tilt-distortion coupling and write the free energy</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 13)</p>
+							<p>Φ 	= Aη<sup>2</sup> + Bη<sup>4</sup> – Vξη<sup>2</sup> cos 2(β – ω) + Kξ<sup>2</sup>η<sup>2</sup> cos 2(β + 2ω) + Lξη<sup>4</sup> cos 2(2β + ω ) – Dη<sup>6</sup> cos 6(β) + Cξ<sup>2</sup></p>
+						</div>
+
+						<p>The 4<sup>th</sup> and 5<sup>th</sup> terms are the next highest order terms in <span class="equation">Φ<sub>ηξ</sub></span>, Equation 2.  To simplify the notation we have omitted the coupling to the hexatic order, which plays no role and truncated at <span class="equation">η<sup>6</sup></span>.</p>
+
+						<p>To analyze Equation 13 we determine <span class="equation">ξ</span> to lowest order by minimizing the free energy</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 14)</p>
+							<p>Φ 	= Φ<sub>ξ</sub> + Φ<sub>ξη</sub> = Cξ<sup>2</sup> - Vξη<sup>2</sup> cos 2(β – ω)</p>
+						</div>
+
+						<p>which gives</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 15)</p>
+							<p>ξ = ( Vη<sup>2</sup> / 2C ) cos 2(β – ω)</p>
+						</div>
+
+						<p>If <span class="equation">C&gt;0</span> and <span class="equation">V&gt;0</span>, as we have found in the earlier analyses, <span class="equation">β – ω = 0</span> and the distortion is in the tilt direction.</p>
+
+						<p>Inserting Equation 15 into Equation 13 gives:</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 16)</p>
+							<p>Φ 	= Aη<sup>2</sup> + Bη<sup>4</sup> – (V<sup>2</sup> / 2C)η<sup>4</sup> + (KV<sup>2</sup>η<sup>6</sup> / 4C<sup>2</sup>) cos 6β + (LVη<sup>4</sup> / 2C) cos 6β – Dη<sup>6</sup> cos 6β</p>
+						</div>
+
+						<div class="equation">
+							<p class="caption">(Eq. 17)</p>
+							<p>Φ 	= Aη<sup>2</sup> + [B – (V<sup>2</sup> / 2C)]η<sup>4</sup> – [D + (KV<sup>2</sup> / 4C<sup>2</sup>) + (LV / 2C)]η<sup>6</sup> cos 6β</p>
+						</div>
+
+						<div class="equation">
+							<p class="caption">(Eq. 18)</p>
+							<p>Φ 	= Aη<sup>2</sup> + B’η<sup>4</sup> – D’η<sup>6</sup> cos 6β</p>
+						</div>
+
+						<p>Where <span class="equation">B’ = B – V<sup>2</sup>/2C</span> and <span class="equation">D’=D – KV<sup>2</sup>/4C<sup>2</sup> – LV/2C</span></p>
+
+						<p>The effect of the distortion is to renormalize the coefficients <span class="equation">B</span> and <span class="equation">D</span>.  There would be a similar renormalization in <span class="equation">ξ</span> and <span class="equation">η</span>.  The renormalization opens the possibility of <span class="equation">B&lt;0</span>, which could change the tilt transition to 1<sup>st</sup> order.  In that case, as discussed, it is necessary for stability that the coefficient of the <span class="equation">η<sup>6</sup></span> term be positive and we should also include the term <span class="equation">Mη<sup>6</sup></span> in the expansion as in Equation 1.  This gives then that the 6<sup>th</sup> order terms are <span class="equation">(M – D’ cos 6β)η<sup>6</sup></span> with the requirement that <span class="equation">(M – D’ cos 6β) &gt; 0</span>.  For NN tilt <span class="equation">β=0</span> and for NNN <span class="equation">β=π/6</span>.</p>
+
+						<p>So if</p>
+
+						<p><span class="equation">D&lt;0, M&gt;0	M – D’ cos 6β &gt; 0	NN tilt</span></p>
+						<p><span class="equation">D&gt;0, M&gt;0	M – D’ cos 6β &gt; 0	NNN tilt</span></p>
+
+						<p>This is the opposite of the case when there is no distortion and the transition is 2<sup>nd</sup> order.</p>
+
+					</div>
+
+					<div id="AFtemperatureAndPressureDependenceOfPhaseBoundaries" class="section">
+						<h3>Temperature and Pressure Dependence of Phase Boundaries</h3>
+						<p>In light of the preceding analysis of the various contributions to the free energy and the stability of the phases, we can construct a schematic phase diagram, <a (click)="scrollTo('figVII-4')" xhref="#figVII-4">Figure VII-4</a>.</p>
+
+						<div class="figure" id="figVII-4">
+							<a rel="gallery" title="Figure VII-4	Schematic phase diagram after analysis." href="assets/imgs/dissertation/sketchOfPhaseBoundaries2.png"><img src="assets/imgs/dissertation/sketchOfPhaseBoundaries2.png" alt="Figure VII-4	Schematic phase diagram after analysis." /></a>
+							<p class="caption">Figure VII-4	Schematic phase diagram after analysis.</p>
+						</div>
+
+						<p>The L<sub>2</sub> phase is shown separated by the <span class="equation">φ=0</span> line into 2 regions, L<sub>2h</sub> in which there is herringbone order and L<sub>2d</sub> in which there is not.  The boundaries on the diagram correspond to the changes in sign of various parameters of combinations of parameters.  In order to locate them in the π – T diagram it is necessary to deduce or make some assumptions about their pressure and temperature dependence.  It seems reasonable, but it is by no means certain, that we can treat the molecular tilt, and therefore <span class="equation">η<sup>2</sup></span>, as a function only of π and the herringbone order as a function only of T.</p>
+					</div>
+
+					<div id="AFconclusion" class="section">
+						<h3>Conclusion</h3>
+						<p>We have shown the topology of the phase diagram from analysis but to locate the boundaries in π-T space we need to have a model for the relation between the coefficients and the experimental variables.  This to date has not been done.  However, the analytical phase diagram already bears some resemblance to the Type I and Type II diagrams that we have seen experimentally.  For example in Type II diagrams, there is evidence for the separation of the L<sub>2</sub>′/Ov region into two regions.  However in Type I diagrams, there is no evidence of a split of the L<sub>2</sub> phase into L<sub>2h</sub> and L<sub>2d</sub>.  The only experimental evidence for any backbone order is in the X-Ray work of Dutta [<a (click)="scrollTo('ref29')" xhref="#ref29">29</a>] which shows from the appearance of extra peaks in heneicosanoic acid that it does exist in the CS and L<sub>2</sub>″ phases.</p>
+					</div>
+				</div>
+
+				<div id="domainKineticsStudiedByImageAnalysisOfBrewsterAngleMicroscopyData" class="section">
+					<h3>VIII. - Domain Kinetics Studied by Image Analysis of Brewster-angle Microscopy Data</h3>
+					<div id="DKintroduction" class="section">
+						<h3>Introduction</h3>
+						<p>Langmuir monolayers of the compounds studied in this work, <a (click)="scrollTo('tableVII-A')" xhref="#tableVII-A">Table VII-A</a>, all form mosaic-like textures upon initial deposition or upon decompression from the untilted phases to the tilted phases.  These textures can readily be imaged using Brewster-angle microscopy.  These textures are the result of azimuthal tilt variations.</p>
+						<div class="figure" id="figVIII-1">
+							<a rel="gallery" title="Figure VIII-1	Mosaic texture ..." href="assets/imgs/dissertation/mosaicTiltDomains.png"><img src="assets/imgs/dissertation/mosaicTiltDomains.png" alt="Figure VIII-1	Mosaic texture (left) of a typical Langmuir monolayer with azimuthal tilt directors schematically represented (right)." /></a>
+							<p class="caption">Figure VIII-1	Mosaic texture (left) of a typical Langmuir monolayer with azimuthal tilt directors schematically represented (right).</p>
+						</div>
+						<p>Over time, these textures anneal or ripen to form, at first approximation, the same textures at a larger length scales.  This behavior is reminiscent of other 2-D growth processes in metallurgy [<a (click)="scrollTo('ref30')" xhref="#ref30">30</a>] and surface science [<a (click)="scrollTo('ref31')" xhref="#ref31">31</a>,<a (click)="scrollTo('ref32')" xhref="#ref32">32</a>,<a (click)="scrollTo('ref33')" xhref="#ref33">33</a>].  In general, as these textures develop over very long times they become stripe-like or develop arrangements that are more complex.  Qualitative observations from seconds to a few days have been made, such as; amphiphiles with short chains anneal faster, those with longer chains at long times tend to form irregular shapes, and anisotropy develops with time.  However, techniques to provide quantified values have not been available.  Because the molecules in these monolayer systems cannot move out of the 2-D plane at an appreciable rate it is expected that this system will provide an excellent basis for 2-D kinetic modeling of a non-conserved order parameter with several ground states.  It is our desire to study the kinetic process and determine which parameters influence growth, what existing growth laws apply, and what the final equilibrium states may be.</p>
+						<p>The focus of this study has been to develop methods to quantify these values and then in turn provide results for the rate of growth dependence at different quench depths.  At this point, we have explored reproducibility and the effect of annealing time in the untilted phase at a single quench depth, and can make qualitative statements about different quench depths.  These are the first measurements of this kind and are preliminary due to the difficulty in developing a suitable image analysis technique.</p>
+					</div>
+					<div id="DKtheoryOfDomainGrowth" class="section">
+						<h3>Theory of Domain Growth</h3>
+
+						<p>Quenched systems are typically modeled using continuum Landau-Ginzburg or Cahn-Hilliard type equations [<a (click)="scrollTo('ref34')" xhref="#ref34">34</a>].  It has been shown that for systems with a single order parameter and a ground state degeneracy of two (<span class="equation">Q=2</span>, two types of domains) that the average domain length scales with time as <span class="equation">t<sup>n</sup></span>, where <span class="equation">n</span> is the domain-growth exponent, while the distribution of sizes remains the same.  For systems with a non-conserved order parameter (Model A) this exponent has been shown to be <span class="equation">n=1/2</span> [<a (click)="scrollTo('ref35')" xhref="#ref35">35</a>,<a (click)="scrollTo('ref36')" xhref="#ref36">36</a>].  For systems with a conserved order parameter (Model B) this exponent has been shown to be <span class="equation">n=1/3</span> [<a (click)="scrollTo('ref37')" xhref="#ref37">37</a>].  Model A systems are driven by minimizing domain boundary curvature.  A typical example of a Model A system is a single component quenched into a two-phase co-existence region.  Typically, long-range interactions are not considered.  Model B systems are driven by diffusive growth.  An example is the phase separation of a binary mixture.</p>
+						<p>Using BAM, one can visualize monolayer domains, which are differentiated by azimuthal tilt regions.  Azimuthal tilt is non-conserved.  Let us consider monolayer systems of long chain lengths formed by the compounds in <a (click)="scrollTo('tableVII-A')" xhref="#tableVII-A">Table VII-A</a>.  If the single dominant order parameter is azimuthal tilt and there are no dominant long-range interactions such as dipolar interactions, these systems should behave like Model A for <span class="equation">Q=2</span>.  However, these systems have six ground states, <span class="equation">Q=6</span>.  Not much was known until recently about systems with more than two ground states, although Liftshitz [<a (click)="scrollTo('ref38')" xhref="#ref38">38</a>] predicted a slowing, or about systems with more than two order parameters.  Later, Safran [<a (click)="scrollTo('ref39')" xhref="#ref39">39</a>] argued that a system with <span class="equation">Q=d+1</span>, where <span class="equation">d</span> is the number of spatial dimensions or two in this case, could become pinned or trapped in local metastable states that would greatly slow the kinetics.</p>
+						<p>Calculations for <span class="equation">Q=2</span> (the Ising model) use a simple Hamiltonian, where <span class="equation">σ</span> is zero or one and <span class="equation">J</span> is the spin energy summed over all pairs of nearest neighbors.  Parallel spins are favored (<span class="equation">-J, J>0</span>) and antiparallel spins are discouraged (<span class="equation">+J</span>).</p>
+								(Ising Hamiltonian, no external field)
+						<p>A generalized model for <span class="equation">Q>2</span> was developed by Potts in 1952,</p>
+								(Potts Hamiltonian)
+						<p>where <span class="equation">σ<sub>i</sub></span> is the <span class="equation">Q</span> state of the spin on site <span class="equation">i</span> (<span class="equation">1= σ<sub>i</sub> =Q</span>) and <span class="equation">δ<sub>i,j</sub></span> is the Kronecker delta function.  The sum is taken over all nearest-neighbor spins and <span class="equation">J>0</span>.</p>
+						<p>It is possible that with these monolayer systems the spin-spin interaction energy <span class="equation">J</span> is dependent on the value of the spins, resulting in anisotropic line energies.  As an example, one can imagine that the line energy between two domains of similar azimuthal tilt is lower than the line energy between two domains of opposite tilt.  Some evidence for this has been observed in experiments by noting that after annealing, domains of opposite tilt tend not to be neighbors.  In this case, a modified Potts model could be used where <span class="equation">J</span> is a function of the spin-spin values <span class="equation">i,j</span>.</p>
+						<p>Recent computer simulations have predicted a variety of exponents for systems of <span class="equation">Q>2</span>.  Seigert [<a (click)="scrollTo('ref40')" xhref="#ref40">40</a>] predicted that for a conserved order parameter with two components an exponent of 1/4.  Using Monte Carlo simulations Anderson [<a (click)="scrollTo('ref41')" xhref="#ref41">41</a>] determined that the exponent decreases linearly between <span class="equation">2=Q=30</span> to a constant near 0.41 for <span class="equation">Q>30</span>.  Simulations by Grest [<a (click)="scrollTo('ref42')" xhref="#ref42">42</a>] and Enomoto [<a (click)="scrollTo('ref43')" xhref="#ref43">43</a>]  determined that for <span class="equation">2=Q=8</span> the exponent is 1/2.  Chen [<a (click)="scrollTo('ref44')" xhref="#ref44">44</a>] found an exponent of 1/2 for a system with many non-conserved order parameters.</p>
+						<p>Dr. Yi Jiang of the Los Alamos National Laboratory conducted preliminary simulations of a modified 6-state Potts model at our request where <span class="equation">J</span> is dependent on the spins values.  This seemed to be a reasonable simulation of our system since there are 6 tilt directions.  The interface energy was defined as <span class="equation">E = 1 - cos (dF)</span>, where <span class="equation">dF</span> is the difference between two neighboring azimuthal tilt angles.  The Monte Carlo Simulation used a 128x128 lattice size, a temperature of zero, ~2500 steps, and a uniform random distribution of 6 states (π/3, 2π/3, 3π/3, 4π/3, 5π/3, 6π/3).  Dr. Yi Jiang found an exponent of <span class="equation">n=0.49</span> or nearly 1/2, <a (click)="scrollTo('figVIII-2')" xhref="#figVIII-2">Figure VIII-2</a>.</p>
+						<div class="figure" id="figVIII-2">
+							<a rel="gallery" title="Figure VIII-2	Monte Carlo results ..." href="assets/imgs/dissertation/plotOfPottsSimulationFromYiJiang_edges4.GIF"><img src="assets/imgs/dissertation/plotOfPottsSimulationFromYiJiang_edges4.GIF" alt="Figure VIII-2	Monte Carlo results from a modified 6-state Potts model." /></a>
+							<p class="caption">Figure VIII-2	Monte Carlo results from a modified 6-state Potts model.</p>
+						</div>
+						<p>Since these monolayer systems often form stripes at very long times it is possible the growth dynamics would be governed by a Smith-Hohenberg type equation which gives an exponent of 0.20-0.25 for late times.  This equation describes coarsening from a disordered phase to a striped phase for a non-conserved order parameter and it has successfully been applied to Rayleigh-Benard convective rolls.  The 1/4 value is associated with defect pinning.  A recent paper by Boyer and Vinals [<a (click)="scrollTo('ref45')" xhref="#ref45">45</a>] looked at early times and found the exponent 1/3, which is associated with domain boundary motion.</p>
+					</div>
+					<div id="DKtheoryOfImageProcessing" class="section">
+						<h3>Theory of Image Processing</h3>
+						<p>To facilitate automated processing of the large amount of data necessary to generate useful statistics, a series of image-processing algorithms or steps have been developed that are focused on preserving the domain's adjacency, area, shape, and type while removing artifacts such as noise and blur.  The software implementation of these algorithms takes a given measured image and produces a reconstructed piecewise-smooth ‘real’ image, which is in turn quantized into a non-gradiated sharp-edged image suitable for general analysis.  A denoising-deblurring variational model is used to reconstruct the real image and a classical Lloyd method is used to quantize the image.  The variational method and the implementation of the Lloyd method were developed by Dr. Luminita Vese and Dr. Tony Chan of the UCLA Mathematics Department.</p>
+
+						<p>The assumed degradation model was <span class="equation">u<sub>0</sub> = Ku + η</span>, where <span class="equation">u<sub>0</sub> ≈</span> measured noisy and or blurred image, <span class="equation">u ≈</span> the real reconstructed image, <span class="equation">K</span> = the blur, and <span class="equation">η</span> = the noise.  It was assumed that the blur is constant across the image field.  The blur is actually a function of the distance from the focal line of the BAM.  Close to the focal line the difference in blur is small.  Images were cropped prior to processing to take advantage of this.</p>
+
+						<p>The denoising-deblurring step is conducted by minimizing,</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 1)</p>
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn001.gif" alt="(Eq. 1)" />
+						</div>
+
+						<p>where <span class="equation">α &gt; 0</span> is a "regularizing" parameter to remove the noise and <span class="equation">∇u</span> is the gradient of <span class="equation">u</span>.  <span class="equation">K</span> is the out-of-focus blur.  It transforms a white point in a white circle of radius <span class="equation">R</span> such that:</p>
+
+						<div class="equation">
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn002.gif" alt="" />
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn003.gif" alt="" />
+						</div>
+
+						<div class="equation">
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn004.gif" alt="" />
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn005.gif" alt="" />
+						</div>
+
+						<p>Segmentation and edge finding was conducted by minimizing</p>
+
+						<div class="equation">
+							<p class="caption">(Eq. 2)</p>
+							<img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn006.gif" alt="(Eq. 2)" />
+						</div>
+
+						<p>where <span class="equation">u<sub>0</sub></span> is the result from Equation 1.  The edge function is calculated by <img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn007.gif" alt="edge function" />.  For small <span class="equation">&rho;: v ≈ 1</span> (white) in homogeneous regions, <span class="equation">v ≈ 0</span> (black) on edges.</p>
+
+						<p>If <span class="equation">α</span> is large and / or <span class="equation">&rho;</span> is small then diffusion is strong and the amount of edge decreases.  If <span class="equation">α</span> is small and / or <span class="equation">&rho;</span> is not as small, the diffusion is weaker and the solution <span class="equation">u</span> is close to the data <span class="equation">u<sub>0</sub></span> and the amount of edge increases.  These two models are used to remove the noise, while preserving the edges.</p>
+
+						<p>Finally, to quantize the image we define the quantizer separators and quantizers as follows:</p>
+						<p><span class="equation">t<sub>1</sub>, t<sub>2</sub>, …, t<sub>N+1</sub></span> (quantizer separators),</p>
+						<p><span class="equation">u<sub>1</sub>, u<sub>2</sub>, …, u<sub>N</sub></span> (quantizers), with</p>
+						<p><span class="equation">t<sub>1</sub> &lt; u<sub>1</sub> &lt; t<sub>2</sub> &lt; … &lt; u<sub>N</sub> &lt; t<sub>N+1</sub></span></p>
+						<p>If initially <span class="equation">u(i,j) &#206; [t<sub>k</sub>, t<sub>k+1</sub>)</span>, then replace <span class="equation">u(i,j)</span> by <span class="equation">u<sub>k</sub></span>.</p>
+						<p>The classical method (Lloyd) is used to minimize the average quadratic error.  Let <span class="equation">H(s)</span> be the probability distribution of <span class="equation">u</span> given by <img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn008.gif" alt="edge function" /> and minimize the energy <img src="assets/imgs/dissertation/theoryOfImageProcessing/eqn009.gif" alt="" /></p>
+					</div>
+					<div id="DKbamExperiment" class="section">
+						<h3>BAM Experiment</h3>
+						<p>The experiment was conducted by compressing a monolayer of n-nonadecanol (C19OH) into the R<sub>II</sub> region of the LS phase at ~17mN/m and ~20°C, annealing for 5-10min, quenching to ~9.0 mN/m in the L<sub>2</sub>′/Ov phase, and observing the texture periodically.  Other quench depths were qualitatively observed.  Images at shallow depths within 1 mN/m of the untilted line were difficult to process because of the lack of contrast near the transition line.  Deeper quenches appeared to anneal faster at early times.</p>
+						<p>An alcohol was used because of its small non-complex head group.  The chain length was chosen such that the quench line was at room temperature and the untilted and tilted phases were not a restricted rotator or a herringbone ordered phase respectively.  Room temperature quenches allowed for easier measurements and a minimal thermal gradient between the trough and the air.  Large gradients would significantly increase flow.  The R<sub>II</sub> region of the LS phase is a rotator phase and lacks herringbone order.  It is likely to exhibit fewer memory effects and shorter annealing times.  In addition, it was necessary to choose a chain length that exhibited a texture with distinct domain types.  Shorter chain lengths result in domains that have slowly varying reflectivity due to bend and/or splay.  Longer chain lengths, greater than 17 methylene units for n-alkanol, result in a fixed number of reflectivities within one field of view, six for n-nonadecanol.</p>
+						<p>The uncertainty in time-zero was ~1.5 seconds or the time it took to perform a quench.  Faster quenching was achieved but not used due to the tearing and excessive short-term flow that occurred.  It was achieved by unmounting the barrier from the motor and using a tension spring or band to rapidly move the barrier.  A stop device was then employed to arrest the barrier at the correct thermodynamic coordinate.</p>
+						<p>Monolayer flow was reduced but not eliminated by the use of airflow barriers around the trough and a glass ring, approximately 5cm in diameter, under the monolayer surface.  The water sub-phase was brought to a level just above the edge of the glass ring.  The imaging laser spot was aligned to an area within the surface enclosed by the ring.  The majority of the remaining flow was due to local heating by the laser.  The flow was maintained below 10μm/s.  Slow rotation was visible but less than 0.25°/minute.</p>
+						<p>An upper limit was imposed on the observation time by contaminants that introduced themselves into the system through the air.  Altered phase behavior was apparent after ~36 hours and substantial property loss, such as the loss of the tilted phases entirely, occurred at ~96 hours.   For observation times greater than 36 hours, it would be necessary to seal the system.  As an experiment, a cover glass was used to partially seal the system.  The cover glass was 0.7mm thick coated by indium-tin oxide and heated by two brass electrodes epoxied to the surface (Delta Technologies).  This reduced contamination but local heating of the cover glass by the laser and heating elements resulted in large scale slowly varying imaging artifacts.  In addition, the temperature gradient imposed by the cover glass created flow in the layer, likely leading to altered growth dynamics and problems maintaining a fixed field of view.</p>
+						<p>Annealing times less than 1 minute resulted in domain distributions that were influenced by the state of the distribution prior to compression into the untilted phases, a memory of the previous texture.  This was indicated by large initial domain sizes or remaining vestiges of a previous pattern and structure such as stripes. </p>
+						<p>The Brewster-angle microscope used has been described previously [<a (click)="scrollTo('ref49')" xhref="#ref49">49</a>].  In addition, an intracavity aperture was installed in the laser to assure a gaussian mode (TEM00).  Images formed by the objective were collected using a charge-coupled device (CCD) camera (Dage-MTI Inc., model CCD-72S). The camera's IR filter was removed and the sensitivity was 0.08 lux. The camera's photo response curve was shown to be s-shaped. The output signal has a sigmodial shape and is linear to the illumination from 20-80% of the saturation level. The camera was operated in a fixed gain mode and was gated by a time-based integrator (Dage-MTI Inc., model Investigater).  The time-based integrator was set to video frame rates other than 30s<sup>-1</sup>. Typical rates were 7.5s<sup>-1</sup> (factor 2) and 3.75s<sup>-1</sup> (factor 1).</p>
+						<p>The video signal generated by the camera was passed through a time base corrector, time stamp generator, and then recorded with a videocassette recorder (VCR).  After an experiment the tape was replayed and images were digitally captured using a computer video capture card (Data Translation, model DT3155) at specific intervals using 1-byte pixels.  The time base corrector (Hotronics Inc., model AP41) synchronized the image with the video card and helped free the image from distortion or noise bands.  The videocassette recorder was operated in SP SVHS mode and was equipped with a digital frame buffer for playback.</p>
+						<div class="figure" id="figVIII-3">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-3	Captured images at times 12s, 36s, 1m, 1m40s, 3m20s, 5m (left to right then top to bottom).  The field of view is not distortion corrected for the BAM viewing angle and is 200μm wide.  The focal line is left to right." />
+							<p class="caption">Figure VIII-3	Captured images at times 12s, 36s, 1m, 1m40s, 3m20s, 5m (left to right then top to bottom).  The field of view is not distortion corrected for the BAM viewing angle and is 200μm wide.  The focal line is left to right.</p>
+						</div>
+						<p>A typical sequence of captured images is shown in <a (click)="scrollTo('figVIII-3')" xhref="#figVIII-3">Figure VIII-3</a>.  This sequence represents an experiment conducted with a fixed field of view.  In fixed field experiments, the trough was manually moved during the experiment to compensate for flow and to maintain the same point under the microscope objective.  Preliminary experiments with times exceeding a few hours were conducted where the monolayer was allowed to wander under the field of view.  These experiments were initially unsuccessful because of the pronounced regional inhomogeneity of domain sizes.  Domains within a millimeter of each other tend to be in the same regional group where the average size is strongly correlated.  Domains of differing region groups have different average sizes to within an order of magnitude.  Sampling different regional groups over short times (&lt;10 hours) resulted in poor statistics.  Multiple experiments under the same conditions or very long experiments with a sealed system could be conducted to recover these statistics.</p>
+					</div>
+					<div id="DKimageProcessing" class="section">
+						<h3>Image Processing</h3>
+						<p>Calculations centered on determining an exponent for the domain area rate of growth.  However, addition information could be extracted from the results including domain-domain correlations, line shape, and anisotropy as a function of time.  To calculate the domain-domain correlations it would be necessary to correct the image to visualize domains with different azimuthal tilts that appear the same.  These domains can appear the same at certain orientations under a BAM due to the form of the reflectivity response function.</p>
+						<div class="figure" id="figVIII-4">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-4	Theoretical reflectivity response function for n-nonadecanol (tilt 20°, wavelength 514nm, dielectric permeability 2.31, and delta dielectric 0.12).  The function was derived by C. Lautz et al. and Th. M. Fischer [50,51]" />
+							<p class="caption">Figure VIII-4	Theoretical reflectivity response function for n-nonadecanol (tilt 20°, wavelength 514nm, dielectric permeability 2.31, and delta dielectric 0.12).  The function was derived by C. Lautz et al. and Th. M. Fischer [<a (click)="scrollTo('ref50')" xhref="#ref50">50</a>,<a (click)="scrollTo('ref51')" xhref="#ref51">51</a>]</p>
+						</div>
+						<p>A correction could be made by mapping the reconstructed image to an ‘azimuthal’ image using the mapping function shown in <a (click)="scrollTo('figVIII-4')" xhref="#figVIII-4">Figure VIII-4</a>.</p>
+						<p>Generally, images were corrected for the BAM viewing angle, however in the absence of shape anisotropy (short times) and field rotation (short times) it was not necessary.  The processing algorithms are sensitive to the local image gradient that is in turn a function of the image brightness and contrast.  It is essential to maintain a constant image brightness and contrast over the duration of the experiment.  Long-time variations were removed by operating the laser in constant power mode and maintaining thermal constancy of the imaging and optical components.  Short-time variations such as those caused by vibration were removed by frame averaging.  Note that if too much frame averaging is used, blurring and loss of detail around domain-domain edges resulted, especially for early times.  This was due to the flow of the monolayer.  Field rotation is also problematic because it varies the relative contrasts of the domains to each other and thus the sensitivity of the algorithms over time.  It should be noted that at very long times (~36 hours), just before measurable phase behavior change, a slow partial loss of contrast in the monolayer was apparent presumably due to airborne contaminants.</p>
+						<p>Due to the spot illumination of the laser and optical artifacts, illumination of the field of view was not uniform or ‘flat’.  To flatten the field a clean water surface was imaged.  This image was then scaled and subtracted from a captured image to perform a background subtraction.  This ratio was not one for two reasons.  The water surface has a different reflectivity than the monolayer and the water surface exhibited more vibrations than a monolayer covered surface requiring a longer integration time that resulted in an overall greater brightness.</p>
+						<p>Adjustable parameters were chosen to match a given experimental setup.  Parameter values were used that selected domains that corresponded to what a human observer would choose as a domain and made constant for all images captured in one experiment.  In practice, it was rarely necessary to change parameters from one experiment to the next if the optics, digital electronics, and laser power were not changed.  The parameters values include <span class="equation">r<sub>sub</sub></span> (background subtraction ratio), <span class="equation">α</span> (regularizing parameter), <span class="equation">&rho;</span> (edge function parameter), <span class="equation">R</span> (blur radius), <span class="equation">u<sub>N</sub></span> (the number of quantizers, domain reflectivities, or colors), <span class="equation">min/max</span> (minimum and maximum values before divergence), <span class="equation">mesh</span> (mesh step size), and <span class="equation">i</span> (number of iterations necessary to achieve a stepwise smooth result) (see Eq.1 and Eq.2).  The <span class="equation">min/max</span> values are limits in the denoising-deblurring step before a point is considered diverged.  The <span class="equation">mesh</span> step size represents how many pixels form a point.  The processing algorithms extended the edges of the image by reflection for calculations that required a continuous edge.</p>
+						<div class="figure" id="figVIII-5">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-5	Results from a typical processing run at early time (top) and late time (bottom).  The left image is after background subtraction.  The center image is the denoise-deblurred image with edges marked in black.  The right image is the quantized image." />
+							<p class="caption">Figure VIII-5	Results from a typical processing run at early time (top) and late time (bottom).  The left image is after background subtraction.  The center image is the denoise-deblurred image with edges marked in black.  The right image is the quantized image.</p>
+						</div>
+						<p>All processing steps take ~7 minutes per image on a 400MHz Pentium II processor using Sun Microsystem's v1.2 Java Virtual Machine.  A limited number of captures were processed.</p>
+						<p>Values for the parameters were set by trial and error.  The blur was chosen such that it was no larger than the smallest domain size after 1.5 seconds and was close to the step width between two domains. The following values were typical.</p>
+
+
+						<div class="table" id="tableVIII-A">
+							<table>
+								<thead>
+									<tr><td>Processing Step</td><td>rsub</td><td>&alpha;</td><td>&rho;</td><td>R</td><td>u<sub>N</sub></td><td>min/max</td><td>mesh</td><td>i</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>BackgroundSubtract</td><td>0.5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+									<tr><td>Denoising-Deblurring</td><td>-</td><td>4.0</td><td>-</td><td>5</td><td>-</td><td>-10/285</td><td>1</td><td>10</td></tr>
+									<tr><td>Edge-Finding</td><td>-</td><td>500</td><td>0.002</td><td>-</td><td>-</td><td>-</td><td>1</td><td>30</td></tr>
+									<tr><td>Quantization</td><td>-</td><td>-</td><td>-</td><td>-</td><td>6</td><td>-</td><td>-</td><td>-</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table VIII-A	Typical parameter values for an image processing sequence.</p>
+						</div>
+
+						<p>Although a constant blur operator was used, it is possible to determine the form of a non-constant operator by using an image with a constant repeating texture.  This would allow for the use of a greater field of view.  As an example, we selected an image of vertical stripes with the focal plane in the horizontal direction, <a (click)="scrollTo('figVIII-6')" xhref="#figVIII-6">Figure VIII-6</a>.</p>
+						<p>If we take a cross sections at values along the y-axis, measure the step distance across the domain boundaries for all boundaries in a cross section, average those values, and then plot the average value vs. the location of the cross section along the y-axis, one can see the functional form of the blur along the y-axis, <a (click)="scrollTo('figVIII-7')" xhref="#figVIII-7">Figure VIII-7</a>.</p>
+						<div class="figure" id="figVIII-6">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-6	Constant repeating texture used to determine the form of a non-constant blur operator." />
+							<p class="caption">Figure VIII-6	Constant repeating texture used to determine the form of a non-constant blur operator.</p>
+						</div>
+						<div class="figure" id="figVIII-7">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-7	Blur variation along the y-axis." />
+							<p class="caption">Figure VIII-7	Blur variation along the y-axis.</p>
+						</div>
+
+					</div>
+					<div id="DKresults" class="section">
+						<h3>Results</h3>
+						<p>Several experiments were conducted over a period of approximately 7 minutes each.  The same optics and sequence of digital electronics were used in each experiment.  Captured images were sampled at higher frequencies during the first 3 minutes of playback (~1 image/ 3 seconds) andlower frequencies (~1 image/ 10-20 seconds) during the remaining time.  Each image was processed first by cropping, background subtraction, denoising-deblurring, edge finding, and then quantization using the parameters outlined in <a (click)="scrollTo('tableVIII-A')" xhref="#tableVIII-A">Table VIII-A</a>.  Except for cropping, each processing step was performed by a custom image-processing program (IP).  The processing algorithms were originally coded independently in Fortran by Dr. Luminita Vese of the UCLA Mathematics Department and then ported to Java to form an integrated program.  The port was conducted to facilitate batch processing, multithreading, and to add a graphical user interface.</p>
+						<div class="table" id="tableVIII-B">
+							<table>
+								<thead>
+									<tr><td>Experiment</td><td>Anneal Time</td><td>Quench Pressure(mN/m)</td><td>Temperature(°C)</td><td>Integration Factor</td><td>Laser Power (Watts)</td><td>Fixed Field</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>ET3-33A</td><td>1min</td><td>9.0</td><td>19.7</td><td>2</td><td>0.50</td><td>yes</td></tr>
+									<tr><td>ET3-33A1</td><td>1min</td><td>9.0</td><td>19.7</td><td>2</td><td>0.50</td><td>yes</td></tr>
+									<tr><td>ET3-33B</td><td>1min</td><td>8.8-8.9</td><td>19.7</td><td>2</td><td>0.50-0.47</td><td>yes</td></tr>
+									<tr><td>ET3-47A</td><td>1m40s</td><td>9.1</td><td>22.2</td><td>1</td><td>0.55</td><td>yes</td></tr>
+									<tr><td>ET3-52A</td><td>10m</td><td>9.0</td><td>22.1</td><td>1</td><td>0.50</td><td>no</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table VIII-B	Experimental parameters for n-nonadecanol quenches.</p>
+						</div>
+						<p>Experimental parameters varied slightly from experiment to experiment.  These variations are listed in <a (click)="scrollTo('tableVIII-B')" xhref="#tableVIII-B">Table VIII-B</a>.  Each experiment was nearly identical except ET3-52A where the microscopic field was allowed to flow freely under the objective.</p>
+						<p>After processing data from each experiment, the domain contour length was plotted as a function of time, <a (click)="scrollTo('figVIII-8')" xhref="#figVIII-8">Figure VIII-8</a>.   The contour length was taken to be proportional to the total number of edge pixels in each image.   Modeling the data as proportional to <span class="equation">t<sup>n</sup></span>, where <span class="equation">t</span> is time and <span class="equation">n</span> is some exponent, these values were plotted as natural log-log and fitted with a least square fit, <a (click)="scrollTo('figVIII-9')" xhref="#figVIII-9">Figure VIII-9</a>. The fit determined the value of <span class="equation">n</span> where <span class="equation">y = y<sub>0</sub> + nx</span>.  The fits from each experiment are compared in <a (click)="scrollTo('figVIII-10')" xhref="#figVIII-10">Figure VIII-10</a>.</p>
+
+						<div class="figure" id="figVIII-8">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-8	The domain contour length as a function of time from experiment ET3-33A." />
+							<p class="caption">Figure VIII-8	The domain contour length as a function of time from experiment ET3-33A.</p>
+						</div>
+						<div class="figure" id="figVIII-9">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-9	Plot of ln(time) vs. ln(contour length) from experiment ET3-33A. Data points are circles.  Least square fit is line." />
+							<p class="caption">Figure VIII-9	Plot of ln(time) vs. ln(contour length) from experiment ET3-33A. Data points are circles.  Least square fit is line.</p>
+						</div>
+						<div class="figure" id="figVIII-10">
+							<img src="assets/imgs/dissertation/" alt="Figure VIII-10	Comparison of least square fits of ln(time) vs. ln(edge count) for various experiments." />
+							<p class="caption">Figure VIII-10	Comparison of least square fits of ln(time) vs. ln(edge count) for various experiments.</p>
+						</div>
+
+						<p>The results are located in <a (click)="scrollTo('tableVIII-C')" xhref="#tableVIII-C">Table VIII-C</a>.  The values of <span class="equation">n</span> are similar except in ET3-52A where a non-fixed field was used.</p>
+						<div class="table" id="tableVIII-C">
+							<table>
+								<thead>
+									<tr><td>Experiment</td><td>n</td><td>n std. error</td><td>y0</td><td>y0 std. Error</td></tr>
+								</thead>
+								<tbody>
+									<tr><td>ET3-33A</td><td>-0.2576</td><td>0.0107</td><td>10.7005</td><td>0.0567</td></tr>
+									<tr><td>ET3-33A1</td><td>-0.2819</td><td>0.0092</td><td>10.8955</td><td>0.0450</td></tr>
+									<tr><td>ET3-33B</td><td>-0.2284</td><td>0.0082</td><td>10.4107</td><td>0.0432</td></tr>
+									<tr><td>ET3-47A</td><td>-0.2152</td><td>0.0110</td><td>10.2215</td><td>0.0558</td></tr>
+									<tr><td>ET3-52A</td><td>-0.1914</td><td>0.0082</td><td>10.5753</td><td>0.0443</td></tr>
+									<tr><td>Average</td><td>-0.2349</td><td>0.00946</td><td>10.5607</td><td>0.0490</td></tr>
+									<tr><td>Avg. without 52A</td><td>-0.2458</td><td>0.00978</td><td>10.5571</td><td>0.0502</td></tr>
+								</tbody>
+							</table>
+							<p class="caption">Table VIII-C	Fit data for linear regression of y=y0+n*x using a tolerance of 0.000100, step size of 100, and 100 iterations.</p>
+						</div>
+
+					</div>
+					<div id="DKconclusion" class="section">
+						<h3>Conclusion</h3>
+						<p>If the average domain length scales as <span class="equation">t<sup>n</sup></span> we find that <span class="equation">n=0.246</span> or very close to 1/4.</p>
+						<p>A value of <span class="equation">n=1/2</span> might have be have been anticipated based on the work by Grest [<a (click)="scrollTo('ref42')" xhref="#ref42">42</a>] and Enomoto [<a (click)="scrollTo('ref43')" xhref="#ref43">43</a>] for systems of <span class="equation">2=Q=8</span> where he showed <span class="equation">n=1/2</span>, the work by Anderson [<a (click)="scrollTo('ref41')" xhref="#ref41">41</a>] for systems where <span class="equation">2=Q=30</span> where the value of <span class="equation">n</span> was <span class="equation">0.50=n&lt;0.41</span>, or the 6-state Potts model simulation conducted by Dr. Yi Jiang which also showed <span class="equation">n=1/2</span>.</p>
+						<p>The result of <span class="equation">n=1/4</span> is consistent with late time Rayleigh-Benard coarsening.  Although the data was taken over a relatively short time, some anisotropy was apparent in the domain structures by examining the Fourier transforms of the BAM images prior to processing.  However, at the longest times observable the system developed a texture that can be described as a long irregular jagged area rather than the smooth stripes seen in other shorter chain length compounds.</p>
+						<p>A number of other order parameters may be present in these systems, such as head group domains and dipolar interactions.  However, initial results are consistent with a system with a non-conserved order parameter coarsening from a disordered phase to a striped phase.</p>
+					</div>
+				</div>
+				<div id="appendixUseOfImageProcessingSoftware" class="section">
+					<h3>IX - Appendix: Use of Image Processing Software</h3>
+					<div id="IPgeneral" class="section">
+						<h3>General</h3>
+						<p>The image processing software was ported from several Fortran programs to a single program in Java called the Image Processor (IP).  IP was developed using the Java2 language, version 1.2 and 1.3.  The code is available for download at <a href="http://www.ellisteer.com/">http://www.ellisteer.com/</a> and is currently at version 3.0.1.</p>
+
+						<div class="figure" id="figIX-1">
+							<a rel="gallery" title="Figure IX-1 Screen shot of the IP program ..." href="assets/imgs/dissertation/mainScreenIPScreenShot2.png"><img width="50%" height="50%" src="assets/imgs/dissertation/mainScreenIPScreenShot2.png" alt="Figure IX-1 Screen shot of the IP program generating a sequence of processed images." /></a>
+							<p class="caption">Figure IX-1 Screen shot of the IP program generating a sequence of processed images.</p>
+						</div>
+
+						<p>The graphical user interface is split into three sections and a menu, <a (click)="scrollTo('figIX-1')" xhref="#figIX-1">Figure IX-1</a>.</p>
+
+						<p>The menu, top, contains the File, Set, Process, Batch, and Log Menus.  The File Menu is used for setting the working directory, saving image results, and saving log files.  The Set Menu is used to set the parameters used for each single-step and multi-step processing routines.  The Process Menu is used to conduct single-step processing routines.  The Batch Menu is used to conduct multi-step processing routines.  And the Log Menu, which has only one item, is used to clear the current log.</p>
+
+						<p>The file list, top left section, contains a listing of the graphic files in the working directory.  Only.gif and .jpg files can be read and displayed by IP.  Once a directory is selected, a user can click on an entry in the file list.  Selecting an entry starts a new image processing sequence and displays the image on the image stack to the right.  Multiple entries for batch processing can be selected using a combination of the shift and/or control keys.  If the result of a previous operation was not saved, the user will be prompted to confirm the new selection.</p>
+
+						<p>The image stack, top right section, is used for image display.  When a new image is generated because of processing the result image is placed on the stack to the right of the original image.  The result image then becomes the new working image.  Single-step processing operations are always conducted on the working image.</p>
+
+						<p>The log window, bottom section, contains text message results, information, and errors sent by the program.  This is especially useful for capturing the results of a batch-processing run.  A few processing operations such as Color-Quantization result in only text output and do not create a new working image.  Messages in the log are prefixed with &gt;&gt;&gt;, ---, or !!!.  These prefixes represent a message of type result, information, and error respectively.  For example when denoising or denoising-debluring an image a typical error is !!! Denoise-Deblu Error: An Exception occurred. java.lang.ArithmeticException: Alpha is too small.  This indicates a divergence exceeding the min/max boundaries and that the alpha parameter value should be increased.</p>
+
+						<p>The single-step processing routines available are Image-Information, Rescale, Background-Subtract, Denoise, Denoise-Deblur, Edge-Find, and Color-Quantization.  Each single-step routine acts on the working image shown in the image stack.  To process an image; set the parameter values for the routine using the Set menu, make the image to process the working image, and then select the routine name on the Process Menu to begin.  Single-step routines operate on the working image.  If more than one image is selected in the file list only the first image in that list is processed.</p>
+
+						<p>Two multi-step processing routines are available. They are BAM Converter v1.0 and BAM Converter 2.0.  Multi-step processing takes an image and applies several single-step routines in a pre-defined order.  The text results are captured in the log and the final image in the sequence is automatically saved to the current working directory.  To multi-step process an image; set the parameter values using the Set Menu for each processing routine used by the multi-step routine, set the parameter value for the multi-step processing routine itself using the Set Menu, make the image to process the working image, and then select the routine name on the Batch Menu to begin processing.</p>
+
+						<p>Batch processing on multiple images is possible when using multi-step processing routines.  This is done by performing the same actions necessary to multi-step process an image but first selecting multiple entries in the file list.</p>
+					</div>
+					<div id="IPsettingProcessingParameters" class="section">
+						<h3>Setting Processing Parameters</h3>
+						<p>Each item on the Set Menu represents a group of parameters, shown together in a dialog box, for each processing routine, <a (click)="scrollTo('figIX-2')" xhref="#figIX-2">Figure IX-2</a>.</p>
+
+						<div class="figure" id="figIX-2">
+							<a rel="gallery" title="IP Dialog Box" href="assets/imgs/dissertation/IPDenoisePanel.png"><img src="assets/imgs/dissertation/IPDenoisePanel.png" alt="Figure IX-2 Screen shots of dialog boxes for setting the parameters of various processing routines." /></a>
+							<a rel="gallery" title="IP Dialog Box" href="assets/imgs/dissertation/IPDenoiseDebluPanel.png"><img src="assets/imgs/dissertation/IPDenoiseDebluPanel.png" alt="Figure IX-2 Screen shots of dialog boxes for setting the parameters of various processing routines." /></a>
+							<a rel="gallery" title="IP Dialog Box" href="assets/imgs/dissertation/IPEdgeFindPanel.png"><img src="assets/imgs/dissertation/IPEdgeFindPanel.png" alt="Figure IX-2 Screen shots of dialog boxes for setting the parameters of various processing routines." /></a>
+							<p class="caption">Figure IX-2 Screen shots of dialog boxes for setting the parameters of various processing routines.</p>
+						</div>
+
+						<p>The Set Menu is shown in two sections separated by a line.  The items above the line separator are parameters for single-step routines.  The items below the line separator are parameters for multi-step routines.  To conduct multi-step processing the parameters for each single-step routine must be set, in addition to the parameters for the multi-step routine itself.  Not all processing routines have settable parameters such as Image-Information and Rescale.  In general, each dialog box has a variables and an options section. The variables are the same as those in <a (click)="scrollTo('tableVIII-A')" xhref="#tableVIII-A">Table VIII-A</a>.  The options generally effect program operation but can also affect the output.  There is a set of default parameters useful for processing BAM images of mosaic-like textures.  These values can be restored using the Restore Defaults button.</p>
+
+					</div>
+					<div id="IPsingleStepProcessingRoutineDescriptions" class="section">
+						<h3>Single-Step Processing Routine Descriptions</h3>
+						<p>In general, each single-step processing routine operates on the magnitude of the pixel values and discards the color information.  For each routine, the image pixels are unpacked into an array of values (64-bit floating-point IEEE754-1985) that is in turn operated on. Each index in the array represents a pixel.  The values are generated by averaging together the red, green, and blue values of each pixel and ignoring any transparency bits.  Once a routine is complete, the array is converted back into pixels using the same value for each color and setting the transparency to zero.  The pixel values for each color are 8-bits.  This requires a truncation of the non-integer portion of the values after processing.  Information on each routine follows.</p>
+
+						<p>The Image-Information routine returns to the log window basic image information including the image dimensions, minimum/maximum/average pixel values, total variation, and total average variation. This routine has no settable parameters.</p>
+
+						<p>Rescale rescales all pixels between 0 and 255. This routine has no settable parameters.</p>
+
+						<p>The Background-Subtract routine takes a preset image scaled by a ratio and subtracts that image from subsequent working images.  The background image is set to the current working image when the Background-Subtract item is selected from the Set Menu.  This image is used for all subsequent subtractions until a new image is set or the program is restarted.</p>
+
+						<p>The Denoise routine uses the same algorithm and settable parameters that the Denoise-Deblur routine uses but does not include the kernel for Deblurring.  The Denoise-Deblur routine includes a non-functioning Auto-Find Alpha option in the parameter dialog box, <a (click)="scrollTo('figIX-2')" xhref="#figIX-2">Figure IX-2</a>.  It is possible to iteratively try different values of alpha until the calculation does not diverge to automatically set the alpha parameter.  But since this results in varying values of alpha for each image in a single batch-processing run it was never implemented.</p>
+
+						<p>The Edge-Find routine returns a diffused image with enhancement at the edges.  Optionally, this routine can display the resultant diffused image and/or an image of the edge magnitude detected at each pixel, <a (click)="scrollTo('figIX-2')" xhref="#figIX-2">Figure IX-2</a>.  Generally, a user would display only the diffused image to be used by an additional processing routine like Color-Quantization. It is useful to display the diffused image and the edge image to determine how effective the choices of parameters are.</p>
+
+						<p>The Color-Quantization routine returns a quantized image with a number of �colors� or gray values set by a parameter.  The colors are chosen by determining the values of the peaks in the histogram.  Each pixel is remapped to the closest chosen values.</p>
+					</div>
+					<div id="IPmultiStepProcessingRoutineDescriptions" class="section">
+						<h3>Multi-Step Processing Routine Descriptions</h3>
+						<p>Multi-step processing routines automatically save the result image.  The saved images are named by appending a suffix to the image name that is set in the parameter dialog box.  For example, when processing a batch of images called test1.gif and test2.gif using the suffix _multi, the saved images would be named test1_multi.gif and test2_multi.gif.</p>
+
+						<p>BAM Image Converter v1.0 applies the following single-step routines in order; Rescale, Background-Subtract, Denoise-Deblur, Edge-Find, and Color-Quantization.  This multi-step routine was used for the image processing throughout this work.</p>
+
+						<p>BAM Image Converter v2.0 applies the following single-step routines in order; Information, Denoise, Rescale, Background-Subtract, Denoise-Deblur, Edge-Find, and Color-Quantization.  This converter is essentially the same as v1.0 except that the image is first denoised.</p>
+					</div>
+					<div id="IPprogramStructure" class="section">
+						<h3>Program Structure</h3>
+						<p>In general, code common to single-step routines and general image handling have been placed as static methods in the ImageUtilities object.  This includes methods for loading images, conversion of pixel data, and data reflection.</p>
+						<p>Single-step, fast operations, inherit from AbstractFastOp while multi-step, slow operations, inherit from AbstractSlowOp.  Both of these inherit from the common base class AbstractDataOp, which is the abstract superclass of all IP image processing operations.   AbstractSlowOp provides a base implementation of threading and updating facilities needed by slower calculations.</p>
+					</div>
+				</div>
+
+				<div id="references" class="section">
+					<h3>X. - References</h3>
+					<ol>
+						<li><a id="ref1"></a>I. J. Langmuir; J. Amer. Chem. Soc. 39, 1848 (1917)</li>
+						<li><a id="ref2"></a>W. D. Harkins; J. Amer. Chem. Soc. 39, 541 (1917)</li>
+						<li><a id="ref3"></a>S. Ställberg-Stenhagen, E. Stenhagen; Nature 156, 239 (1945)</li>
+						<li><a id="ref4"></a>E. Stenhagen in "Determination of Organic Structures by Physical Methods", E. A. Braude and , F. C. Nachod; Eds., Academic Press, New York, (1955)</li>
+						<li><a id="ref5"></a>M. Lundquist; Ark Kemi. 17, 183 (1960)</li>
+						<li><a id="ref6"></a>M. Lundquist; Ark. Kemi. 21, 395 (1963)</li>
+						<li><a id="ref7"></a>M. Lundquist; Ark. Kemi. 32, 27 (1968)</li>
+						<li><a id="ref8"></a>M. Lundquist; Chem. Scr. 1, 5 (1971)</li>
+						<li><a id="ref9"></a>M. Lundquist; Chem. Scr. 1, 197 (1971)</li>
+						<li><a id="ref10"></a>M. Lundquist; Prog. Chem. Fats Other Lipids 16, 101 (1978)</li>
+						<li><a id="ref11"></a>G.A. Overbeck,and D. Möbius; J. Phys. Chem. 97, 7999-8004 (1993)</li>
+						<li><a id="ref12"></a>Y. R. Shen, Th.Rasing, M. W. Kim, S. Grubb; Phys. Rev. Lett. 55, 2903 (1985)</li>
+						<li><a id="ref13"></a>K. B. Eisenthal, T. F. Heinz, K. Kemnitz, K. Bhattacharyya, J. M. Hicks, G. R. Pinto; Chem. Phys. Lett. 31, 285 (1986)</li>
+						<li><a id="ref14"></a>D. Beaglehole; Rev. Sci. Instrum. 59, 2557 (1988)</li>
+						<li><a id="ref15"></a>D. Möbius, G. A. Overbeck, D. Hönig; J. Phys. Chem. 95, 4590 (1991)</li>
+						<li><a id="ref16"></a>J. Meunier, S. Hénon; Rev. Sci. Instrum. 62, 936 (1991)</li>
+						<li><a id="ref17"></a>R.A. Dluhy, D.G. Cornell; J. Phys. Chem. 89, 3195 (1985)</li>
+						<li><a id="ref18"></a>C. R. Flach, A. Gericke, R. Mendelsohn; J. Phys. Chem. B 101, 58 (1997)</li>
+						<li><a id="ref19"></a>G. Marshall, E. Teer, C. M. Knobler, M. Schalke, M. Lösche; Colloids Surf. A, 171, 41 (2000)</li>
+						<li><a id="ref20"></a>S. Rivière, S. Hénon, J. Meunier, D. K. Schwartz, M.-W. Tsao and C. M. Knobler; J. Chem. Phys. 101, pp. 10045 (1993)</li>
+						<li><a id="ref21"></a>M. K. Durbin, A. Malik, A. G. Richter, R. Ghaskadvi, T. Gog, and P. Dutta; J. Chem. Phys. 106, 8216 (1997)</li>
+						<li><a id="ref22"></a>C. Lautz and T. M. Fischer; Europ. Phys. J. B 7, 263 (1999)</li>
+						<li><a id="ref23"></a>A. M. Bibo, C. M. Knobler, I. R. Peterson; J. Phys. Chem. 95, 5591 (1991)</li>
+						<li><a id="ref24"></a>J. V. Selinger, Z. -G. Wang, R. F. Bruinsma, C. M. Knobler; Phys. Rev. Lett. 70, 1139 (1993)</li>
+						<li><a id="ref25"></a>J. D. Brock, R. J. Birgeneau, J. D. Litster, A. Aharony; Contemporary Phys. 30, 321 (1989)</li>
+						<li><a id="ref26"></a>D. R. Nelson, B. I. Halperin; Phys. Rev. B. 19, 2457 (1979)</li>
+						<li><a id="ref27"></a>D. R. Nelson in "Phase Transitions" Volume 7, Domb and Green, Eds.; Pergamon, Oxford (1983)</li>
+						<li><a id="ref28"></a>B. I. Halperin, D. R. Nelson; Phys. Rev. Lett. 41, 121 (1978)</li>
+						<li><a id="ref29"></a>M. K. Durbin, et al.; J. Chem. Phys., v.58 7686 (1998)</li>
+						<li><a id="ref30"></a>J. E. Burke, D. Turnbull; Prog. Metal Phys. v.3 n.220 (1952)</li>
+						<li><a id="ref31"></a>P. S. Sahni, J. D. Gunton; Phys. Rev. Lett. v.47 n.1754 (1981)</li>
+						<li><a id="ref32"></a>M. G. Lagally, G. C. Wong, T. M. Lu; CRC Crit. Rev. Solid State Mat. Sci., v.7 n.233 (1978)</li>
+						<li><a id="ref33"></a>S. K. Sinha (edited by). Ordering In Two Dimensions, Plenum, New York (1980)</li>
+						<li><a id="ref34"></a>J. D. Gunton, M. San Miguel, P. Sahni; Phase Transitions and CriticalPhenomena, edited by C. Domb, J. L. Lebowitz; (Academic, London) v.8 pp.267 (1983)</li>
+						<li><a id="ref35"></a>I. M. Lifshitz, Sov. Phys. JETP, v.15, 939 (1962)</li>
+						<li><a id="ref36"></a>S. M. Allen and J. W. Cahn; Acta Metall., v.27, 1085 (1979)</li>
+						<li><a id="ref37"></a>I. M. Lifshitz and V. V. Slyosov; J. Phys. Chem. Solids, v.19, 25 (1961)</li>
+						<li><a id="ref38"></a>I. M. Liftshitz; Zh. Eksp. Teor. Fiz., v.42, 1354 (1962) [Sov. Phys. – JETP v.15, 939 (1962)]</li>
+						<li><a id="ref39"></a>S. A. Safran; Phys. Rev. Lett., v.46, 1581 (1981)</li>
+						<li><a id="ref40"></a>M. Seigert and M. Rao; Phys. Rev. Lett., v.70, 1956 (1993)</li>
+						<li><a id="ref41"></a>M. P. Anderson, D. J. Srolovitz, G. S. Grest, and P. S. Sahni; Acta Metall., v.32, 783 (1984)</li>
+						<li><a id="ref42"></a>G. S. Grest, M. P. Anderson, and D. J. Srolovitz; Phys. Rev. B., v.38, 3752 (1988)</li>
+						<li><a id="ref43"></a>Y. Enomoto and R. Kato; Phys. Lett. A; v.142, 256 (1989); J. Phys. Condens. Matter, v.2, 9215 (1990)</li>
+						<li><a id="ref44"></a>L-Q. Chen and Wei Yang; Phys. Rev. B, v.50 n.21 (1994)</li>
+						<li><a id="ref45"></a>Boyer and Vinals; Phys. Rev. E, v.64 050101 (2001)</li>
+						<li><a id="ref46"></a>T. Chan, L. Vese;  “Variational Image Restoration &amp; Segmentation Models and Approximations‿ CAM Report 97-47 (October 1997)</li>
+						<li><a id="ref47"></a>G. Aubert, L. Vese;   SIAM J. Numer. Analysis, v.34 n.5 pp.1948-1979 (October 1997)</li>
+						<li><a id="ref48"></a>L. Rudin, S. Osher, E. Fatemi;  Physica D, 60 pp.259-268 (1992)</li>
+						<li><a id="ref49"></a>B. Fisher, M.-W. Tsao, J. Ruiz-Garcia, T. M. Fischer, D. K. Schwartz, C. M. Knobler; J. Phys Chem, v.98, 7430 (1994)</li>
+						<li><a id="ref50"></a>C. Lautz, Th. M. Fischer, M. Weygand, M. Lösche, P. B. Howes, K. and K. Kjaer;  J. Chem. Phys., v.108 n.11 pp.4640-4646 (1998)</li>
+						<li><a id="ref51"></a>Habilitation Thesis of Th. M. Fischer; Dept. of Physics, Leipzig University (1999).  Note that there is an error in the final function.  There should be negatives in front of A, B, and C and a factor of two moved from CD to 1/2 in AB.</li>
+					</ol>
+				</div>
+
+			</div>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+	<!--
+
+
+
+	-->
+
+
+	<!--
+
+			<div id="body" class="section">
+			</div>
+
+				<h3>theory</h3>
+				<div id="theory" class="section">
+					<h3>Theory of Image Processing</h3>
+
+
+				</div>
+
+			</div>
+
+	-->
+
+	</div>
+
+	</div>
+	<div class="footer">
+		<p><a href="mailto:contact@james.io">contact@james.io</a></p>
+		<p style="font-size: 0.7em">copyright {{getYear()}}</p>
+	</div>
+</ion-content>

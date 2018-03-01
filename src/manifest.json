@@ -1,0 +1,13 @@
+{
+  "name": "james.io",
+  "short_name": "james.io",
+  "start_url": "index.html",
+  "display": "browser",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#191919",
+  "theme_color": "#4e8ef7"
+}

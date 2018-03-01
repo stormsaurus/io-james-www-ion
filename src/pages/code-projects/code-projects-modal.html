@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            {{project.title}}
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="content">
+		<div class="contentBody">
+            <div class="section">
+                <ion-slides id="{{project.id}}" pager="{{project.images.length>1}}" autoplay="{{project.interval}}" speed="1500" loop="true">
+                    <ion-slide *ngFor="let image of project.images"><img src="{{image}}"/></ion-slide>
+                </ion-slides>
+                <ion-card *ngIf="project.summary.length>0">
+                    <ion-card-content *ngIf="project.summary.length>0" text-wrap [innerHTML]="project.summary">
+                    </ion-card-content>
+                </ion-card>
+                <ion-card *ngIf="project.domain.length>0 || project.git.length>0 || project.download.name">
+                    <ion-card-header>
+                        <span *ngIf="project.git.length>0 || project.download.name">Download & </span>Domain
+                    </ion-card-header>
+                    <ion-card-content text-center text-wrap>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col *ngIf="project.git.length>0 || project.download.name">
+                                    <ion-chip *ngIf="project.git.length>0">
+                                        <ion-avatar>
+                                            <a class="nodecor" href="{{project.git}}"><img src="assets/imgs/Octocat.png"></a>
+                                        </ion-avatar>
+                                        <ion-label color="primary"><a href="{{project.git}}">Git</a></ion-label>
+                                    </ion-chip>
+                                    <ion-chip *ngIf="project.download.name">
+                                        <a class="nodecor" href=""><ion-icon name="download" color="primary"></ion-icon></a>
+                                        <ion-label color="primary"><a href="{{project.download.href}}">{{project.download.name}}</a></ion-label>
+                                    </ion-chip>
+                                </ion-col>
+                                <ion-col *ngIf="project.domain.length>0||project.tools.length>0">
+                                    <p *ngIf="project.domain.length>0">{{project.domain}}</p>
+                                    <p *ngIf="project.tools.length>0">{{project.tools}}</p>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+                <ion-card *ngIf="project.description.length>0">
+                    <ion-card-header>
+                        Description
+                    </ion-card-header>
+                    <ion-card-content text-wrap>
+                        <div [innerHTML]="project.description">
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+                <ion-card *ngIf="project.codeExample.length>0">
+                    <ion-card-header>
+                        Code
+                    </ion-card-header>
+                    <ion-card-content text-wrap>
+                        <div [innerHTML]="project.codeExample">
+                        </div>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+        </div>
+    </div>
+</ion-content>

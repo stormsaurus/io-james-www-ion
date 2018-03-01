@@ -1,0 +1,269 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.scroll-content {
+    overflow-y: auto !important;
+}
+
+.card-title-md{
+    color: white;
+    text-align: center;
+}
+.card-md p{
+    color: white;
+}
+
+.alert-wrapper{
+    background-color: #191919 !important;
+}
+
+/*
+//pallette
+#0e1f4d - menu background
+#2856D8 - link decor
+#81A2FF - link highlight
+#222222	- deep background
+#aaaaaa - subtle text
+#333333 - background
+*/
+
+body {
+    color: #fff;
+    background-color: #333;
+    font-family: Verdana,Arial,sans-serif;
+    user-select: text;
+    /*margin: 0;*/
+}
+.footer {
+    text-align: center;
+    margin: 2em 0 0 0.5em;
+    width: 100%;
+    clear: both;
+    color: #aaa;
+}
+
+.aside img      { border-width: 0; }
+.aside          { float:right; clear: both; padding-right: 1em;}
+.header h3      { font-size: 0.75em; text-align: right; padding-right: 2em; }
+.horizontal	li  { display: inline; }
+.nosymbol li    { list-style: none; }
+.emphasizeText  { font-weight: bold; }
+
+.content .contentTitle  { text-transform: lowercase;}
+.content .contentBody   {}
+.content img            { margin: 0.2em; border-width: 0; }
+.content img.icon       { margin: 0em 0.2em 0em 0.2em !important; }
+ion-slides img          { margin: 0 !important; }
+
+.content .code          { font-family: monospace; white-space: pre; background-color: #191919; padding: 0em 0.5em 0em 0.5em;}
+
+.content .section > h3      { text-transform: lowercase; }
+.content .section > h4      { text-transform: lowercase; }
+.content .section > p       { margin-left: 1em; }
+.content .section > ul      { margin-left: 1em; }
+.content .section > table   { margin-left: 1em; }
+
+.content a:link     { color:#fff; border-bottom: 1px #2856D8 solid; text-decoration:none; }
+.content a:visited  { color:#fff; border-bottom: 3px #2856D8 solid; text-decoration:none; }
+.content a:hover    { color:#fff; border-bottom: 3px #2856D8 solid; text-decoration:none; }
+.content a:active   { color:#fff; border-bottom: 3px #2856D8 solid; text-decoration:none; }
+
+.content .ui-widget-header a:link       { border-bottom-width: 0px; }
+.content .ui-widget-header a:visited    { border-bottom-width: 0px; }
+.content .ui-widget-header a:hover      { border-bottom-width: 0px; }
+.content .ui-widget-header a:active     { border-bottom-width: 0px; }
+
+a.nodecor:link          { border-bottom-width: 0px; }
+a.nodecor:visited       { border-bottom-width: 0px; }
+a.nodecor:hover         { border-bottom-width: 0px; }
+a.nodecor:active        { border-bottom-width: 0px; }
+
+div#dissertationBody .figure a:link     { border-bottom-width: 0px; }
+div#dissertationBody .figure a:visited  { border-bottom-width: 0px; }
+div#dissertationBody .figure a:hover    { border-bottom-width: 0px; }
+div#dissertationBody .figure a:active   { border-bottom-width: 0px; }
+
+.footer a:link          { color:#aaa; border-bottom: 1px #2856D8 solid; text-decoration:none; }
+.footer a:visited       { color:#aaa; border-bottom: 1px #2856D8 solid; text-decoration:none; }
+.footer a:hover         { color:#aaa; border-bottom: 2px #2856D8 solid; text-decoration:none; }
+.footer a:active        { color:#aaa; border-bottom: 2px #2856D8 solid; text-decoration:none; }
+/*
+.content a:link         { color:#2856D8; text-decoration:none; }
+.content a:visited      { color:#2856D8; text-decoration:none; }
+.content a:hover        { color:#81A2FF; text-decoration:none; }
+.content a:active       { color:#81A2FF; text-decoration:none; }
+*/
+
+/* resume styles */
+
+.jobDescription     { margin-left:4em;}
+.jobTitle           { margin-left:4em;}
+
+.section td.item    { vertical-align:top;}
+.section .title     { font-weight:bold;white-space:nowrap;}
+.section .duration  { padding:0; margin: 0; text-align: center; font-weight:normal; white-space:nowrap; font-size:0.8em;}
+.section td.description { padding:0 1em 1em 1em; }
+.section .separated     { border-bottom: 1px solid #777; }
+.section td.years       { padding:0 1em 1em 1em; vertical-align:top; white-space:nowrap; text-align:right;}
+#resumePermission       {	}
+#contact-info           { text-align: center; font-size: 1.1em;  }
+/*.experience .description  { padding-bottom: 2em !important; }*/
+.experience .title      { margin-bottom: 0.2em }
+
+/* publication styles */
+
+.publicationTitle       { margin-left:1em;font-weight: bold;font-size:0.9em;}
+.publicationAuthors     { margin-left:3em; }
+.publicationReference   { margin-left:3em;font-size:0.8em; }
+ul.publicationFiles     { margin-left: 1em; margin-top:0.1em; margin-bottom: 0.5em; list-style-type: none; }
+
+/* documentation */
+
+.figure                 { font-weight:bold; text-align: center; }
+.figure p.caption       { text-align: center; }
+.table                  { font-weight:bold; text-align: center; }
+.table p.caption        { text-align: center; }
+div.equation            { font-weight:bold; text-align: center; }
+.equation p.caption     { float: right; }
+span.equation           { font-weight:bold; }
+
+/* dissertation styles */
+div#dissertationBody img {
+    background-color: white;
+}
+div#dissertationHead div {
+    border-width:0 0 1px 0; border-style:dashed; border-color:#999999;
+}
+div#dissertationHead h3{
+    margin-top:0.5em;margin-bottom:0.5em;padding-left:1em;
+	border-width:0 0 0 0;font-size:1.2em; font-family:Verdana, sans-serif;
+	text-align: center;
+}
+div#dissertationHead p{
+    text-align: center; font-size:1em;
+}
+
+div#dissertationHead div#title p{}
+
+div#dissertationHead div#copyright p{}
+
+div#dissertationHead div#signature p{}
+div#dissertationHead div#signature p.signatureLine{	text-align: right; }
+
+div#dissertationHead div#tableOfContents ul{ list-style-type: none; }
+div#dissertationHead div#tableOfContents ol{ list-style-type: upper-roman; }
+div#dissertationHead div#tableOfContents ol li{	margin-bottom:1.0em;font-weight:bold; }
+div#dissertationHead div#tableOfContents ol ol{	list-style-type: none; }
+div#dissertationHead div#tableOfContents ol ol li{ margin-bottom:0; font-weight:normal;list-style-type: none; }
+div#dissertationHead div#tableOfContents ol ol li a{ font-weight:normal; }
+
+div#dissertationHead div#listOfFiguresAndTables table{}
+div#dissertationHead div#listOfFiguresAndTables table td.label{ white-space:nowrap;vertical-align:top; }
+div#dissertationHead div#listOfFiguresAndTables table a{ font-weight:normal; }
+
+div#dissertationHead div#acknowledgements p{ text-align: left; text-indent: 2em; }
+
+div#dissertationHead div#vitaAndPublications div { border-style:none; text-align: left; }
+div#dissertationHead div#vitaAndPublications .publicationAuthors{ margin-bottom: 1em; }
+div#dissertationHead div#vitaAndPublications .publicationTitle{ margin-left: 8em; }
+div#dissertationHead div#vitaAndPublications .publicationReference{ margin-left: 8em; margin-bottom: 1em; }
+div#dissertationHead div#vitaAndPublications table#vita { margin: 0 auto; }
+div#dissertationHead div#vitaAndPublications table#vita td { padding:0 1em 1em 1em;vertical-align:top; }
+
+div#dissertationHead div#abstractOfTheDissertation p.abstractText{ text-align: left; text-indent: 2em; }
+
+
+div#dissertationBody > div.section{ margin-bottom:10em; }
+div#dissertationBody p{ text-indent: 2em; }
+
+div#dissertationBody table{ border-collapse: collapse; margin: 0 auto; }
+div#dissertationBody table thead td{ padding: 0.5em 0.6em 0.5em 0.6em;border-bottom: solid 2px grey; }
+div#dissertationBody table tbody td{ padding: 0.5em 0.6em 0.5em 0.6em;border-bottom: solid 1px grey; }
+div#dissertationBody table tbody{ border-bottom: solid 2px grey; }
+
+// Overrides for printing.  Ionic by default looks rather poor when printed.
+//
+//
+//
+
+@media print {
+    body {
+        position: static;
+        overflow: initial;
+        color: black !important;
+    }
+    ion-nav {
+        overflow: initial !important;
+    }
+    .scroll-content {
+        position: relative;
+        overflow: visible !important;
+    }
+    ion-header {
+        display: none !important;
+    }
+    header nav, footer {
+        display: none;
+    }
+    button {
+        display: none !important;
+    }
+    ion-fab {
+        display: none;
+    }
+    .pane {
+        position: initial;
+    }
+    p a {
+        word-wrap: break-word;
+    }
+    .app-root, .ion-page, ion-app, ion-nav, ion-tab, ion-tabs {
+        contain: none;
+    }
+    .card-md {
+        box-shadow: unset;
+        -webkit-box-shadow: unset;
+        margin-bottom: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .card-md .card-md, .visualUnity{
+        page-break-inside: avoid;
+    }
+    .card-md h4, .card-md .card-md h4{
+        margin-bottom: 8px !important;
+    }
+    h3, h4, ion-card-header, .card-header{
+        page-break-after: avoid;
+    }
+    ion-card-header{
+        padding: 8px !important;
+    }
+    ion-card-content{
+        page-break-before: avoid;
+    }
+    .scroll-content, ion-content{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    //#contactInfo{ float:right; display: inline-block; width: unset; }
+    #resumeLinks{ display:none; }
+    a:link          { border-bottom-width: 0px !important; text-decoration:none; }
+    a:visited       { border-bottom-width: 0px !important; text-decoration:none; }
+    a:hover         { border-bottom-width: 0px !important; text-decoration:none; }
+    a:active        { border-bottom-width: 0px !important; text-decoration:none; }
+}

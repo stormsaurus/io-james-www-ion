@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Projects</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="content">
+		<div class="contentBody">
+			<div class="section">
+                <p>Here is a small slice of projects I have worked on over the years.</p>
+            </div>
+            <div class="section">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 *ngFor="let project of projects; let i = index">
+                            <ion-card class="code-projects-card" (click)="openDetails(i)">
+                                <ion-slides id="{{project.id}}" pager="{{project.images.length>1}}" autoplay="{{project.interval}}" speed="1500" loop="true">
+                                    <ion-slide *ngFor="let image of project.images"><img src="{{image}}"/></ion-slide>
+                                </ion-slides>
+                                <ion-card-content>
+                                    <ion-card-title>
+                                        {{project.title}}
+                                    </ion-card-title>
+                                    <p [innerHTML]="project.summary">
+                                    </p>
+                                </ion-card-content>
+                                <div class="fadeout-text"></div>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </div>
+    </div>
+</ion-content>

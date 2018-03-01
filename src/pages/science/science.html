@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Science</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <a class="nodecor" rel="gallery" title="Flatland Book Cover" href="assets/imgs/science/flatland_cover.jpg"><img src="assets/imgs/science/flatland_cover_small.jpg" /></a>
+	<p>I used to do experimental Physical Chemistry.  It's <a rel="gallery" title="xkcd.com" href="http://imgs.xkcd.com/comics/purity.png">between</a> physics and chemistry.  Eventually I changed paths and arranged bits instead of molecules.</p>
+	<p>My Ph.D. research was at the University of California Los Angeles, undergraduate research was at University of Florida Gainesville, while also spending some time at <!--<a rel="shadowbox" href="http://www.lure.u-psud.fr/"></a>-->L.U.R.E. which was a <a rel="shadowbox" href="http://en.wikipedia.org/wiki/Synchrotron">synchrotron</a> facility in Orsay, France.  We <a (click)="openPage('Publications')" href="#">published</a> some <a (click)="openPage('Dissertation')" href="#">research</a> about two dimensional monolayers which were subjected to crushing barriers, lasers and particle accelerators.</p>
+	<p>The molecules didn't have a chance.</p>
+	<p>A high power laser microscope images of single molecular layers on water.  If you catch them at just the right conditions they create some fantastic images.</p>
+	<div class="figure">
+        <ion-slides pager autoplay="3000" loop="true" speed="1000" #sunstudio>
+            <ion-slide><img src="assets/imgs/monolayer/boojums_3_5_inches.gif"/></ion-slide>
+            <ion-slide><img src="assets/imgs/monolayer/mosaic01_3_5_inches.gif"/></ion-slide>
+            <ion-slide><img src="assets/imgs/monolayer/stripesInStripes_3_5_inches.gif"/></ion-slide>
+            <ion-slide><img src="assets/imgs/monolayer/scallops_3_5_inches.gif"/></ion-slide>
+            <ion-slide><img src="assets/imgs/monolayer/onions_3_5_inches.gif"/></ion-slide>
+            <ion-slide><img src="assets/imgs/monolayer/steppingStonesLCLECoexistance_3_5_inches.gif"/></ion-slide>
+        </ion-slides>
+	</div>
+	<div class="footer">
+		<p><a href="mailto:contact@james.io">contact@james.io</a></p>
+		<p style="font-size: 0.7em">copyright {{getYear()}}</p>
+	</div>
+</ion-content>

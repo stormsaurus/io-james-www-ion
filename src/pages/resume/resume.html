@@ -1,0 +1,281 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Resume</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-fab top right edge>
+      <button (click)="print()" ion-fab mini><ion-icon name="print"></ion-icon></button>
+    </ion-fab>
+	<ion-card text-center id="contactInfo">
+        <ion-card-content>
+            <p>James Teer<br />
+			Santa Clara, CA<br />
+			U.S. citizen<br />
+            contact@james.io</p>
+        </ion-card-content>
+	</ion-card>
+    <ion-card id="resumeLinks">
+        <ion-card-content text-center>
+            <ion-chip margin-right>
+                <ion-avatar>
+                    <a class="nodecor" href="mailto:contact@james.io"><ion-icon name="mail" color="primary"></ion-icon></a>
+                </ion-avatar>
+            </ion-chip>
+            <ion-chip margin-right>
+                <ion-avatar>
+                    <a class="nodecor" href="https://github.com/stormsaurus/"><ion-icon name="logo-github" color="primary"></ion-icon></a>
+                </ion-avatar>
+            </ion-chip>
+            <ion-chip margin-right>
+                <ion-avatar>
+                    <a class="nodecor" href="https://www.linkedin.com/in/jteer"><ion-icon name="logo-linkedin" color="primary"></ion-icon></a>
+                </ion-avatar>
+            </ion-chip>
+        </ion-card-content>
+	</ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <h3>objective</h3>
+        </ion-card-header>
+        <ion-card-content margin-left>
+			<p>interesting</p>
+        </ion-card-content>
+	</ion-card>
+    <ion-card>
+        <ion-card-header>
+            <h3>philosophy</h3>
+        </ion-card-header>
+        <ion-card-content margin-left>
+			<p>new ideas, make it work, then optimize</p>
+        </ion-card-content>
+	</ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <h3>business</h3>
+        </ion-card-header>
+        <ion-card-content>
+			<ion-item text-wrap>
+				<h4 margin-bottom>Innovation</h4>
+                <p margin-left>Have founded/co-founded a couple startups.  Experienced in wearing many hats including conception, hiring, and execution.</p>
+			</ion-item>
+            <ion-item text-wrap>
+				<h4 margin-bottom>Leadership</h4>
+				<p margin-left>Building consensus on a new path if the current one is not a productive one.</p>
+			</ion-item>
+            <ion-item text-wrap>
+				<h4 margin-bottom>Architect</h4>
+				<p margin-left>A broad understanding of the space and the technology tradeoffs between time to maturity, emergent technology, and when the window of opportunity is.</p>
+			</ion-item>
+        </ion-card-content>
+	</ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <h3>technical</h3>
+        </ion-card-header>
+        <ion-card-content>
+            <p margin-left>I started in science and then became fascinated with computer technologies.  Most of my technical computer experience is full stack with a heavy amount of java and javascript.  Various endevours have added experience in machine learning, medical devices/diagnostics, shipping management, geospatial analysis, electromechanical simulations, audio and video streaming, and writing world class APIs.</p><p margin-left>Currently I am looking into new languages again like go, exploring improvements in javascript like typescript and es6, and digging deeper into machine learning.</p>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Recent</h4></ion-col><ion-col text-right><h4>days</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>go, vue</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Machine Learning</h4></ion-col><ion-col text-right><h4>1.5 years</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>java, python, numpy, scipy, sparkml, weka</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Web</h4></ion-col><ion-col text-right><h4>10+ years</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>angular, bootstrap, css, es6, html, html5, ionic, javascript, java, jasmine, karma, modernizr, momentjs, npm, rxjs, typescript, threejs, underscore, and others.</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Mobile</h4></ion-col><ion-col text-right><h4>1 years</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>hybrid apps using cordova, html/html5, ionic, typescript</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Geospatial</h4></ion-col><ion-col text-right><h4>2 years</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>arcgis, cesiumjs, fugroviewer, geotools, grass, html5, java, javascript, lastools, leaflet, mapbox, openstreetmap, qgis, slippy, turf</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>General Tools</h4></ion-col><ion-col text-right><h4>varies</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left>atom, aws including ec2, rds, s3, iam, jenkins, git, gitkraken, mysql, npm, postgresql, travis-ci</p></ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-row><ion-col text-left><h4>Dusty</h4></ion-col><ion-col text-right><h4>varies</h4></ion-col></ion-row>
+                </ion-card-header>
+                <ion-card-content><p margin-left margin-bottom>Languages - c/c++, bash, fortran, javafx, lua, perl, php, tcl/tk</p><p margin-left margin-bottom>Tools - apache, ant, audio/visual hardware encoders, bower, docker, eclipse as a platform, hibernate, iptables/ipchains, jetty, jnlp, jwplayer, kubernetes, maven, mercurial, mod_rewrite, mod_proxy, mod_ssl, nginx, spring, svn, tomcat, virtual hosting, weblogic </p><p margin-left>Other - D3, backbone, jquery, jquery ui, qunit, geronimo, pubsubjs, jpa via openjpa, openjpa, rmtp, smil, junit, testng, jabsorb, video/audio transcoding</p></ion-card-content>
+            </ion-card>
+        </ion-card-content>
+	</ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <h3>experience</h3>
+        </ion-card-header>
+        <ion-card-content>
+            <p margin-left>This is a selected and incomplete history of prior work in order to cut down on the length of this resume.</p>
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Machine Learning Engineer</h4>
+                        <h4>Sungevity, Inc.</h4>
+                        <h4>June 2014 – Jun 2016</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Created and managed a team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for customer solar systems.  The output was various needed datasets enabling Sungevity to move into new markets and produce designs at scale.  Was personally responsible for the core innovations.</p>
+                    </ion-card-content>
+                </ion-card>
+<!--
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Startup Research</h4>
+                        <h4>July 2013 – April 2014</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Explored potential startup ideas.  These technically involved angularjs, Unity, WebGL, three.js, and various other upcoming HTML5 features.</p>
+                    </ion-card-content>
+                </ion-card>
+-->
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Guardian of Forever</h4>
+                        <h4>CyDesign Labs, Inc.</h4>
+                        <h4>May 2012 – May 2013</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Development of a model-based design optimization platform for engineers. The software was first used by DARPA for the crowd sourced FANG competition awarding a million dollar prize.  It integrates requirements management, design space exploration, modeling, Modelica simulation, trade space studies, parametric optimization, verification and certification to arrive at better designs faster.  My work centered on architecting and implementing a modular html5 client, defining the services REST API, and guiding ongoing web client work.</p><p>Particularly challenging was that it quickly became clear we were going to miss features for a key funding deadline, so myself and two others pitched in over the end of year holidays and rebuilt the entire web client and key server components to make that deadline.  This eventually resulted in a successful aquisition by ESI.</p>
+                    </ion-card-content>
+                </ion-card>
+<!--
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Founder</h4>
+                        <h4>Kiki Streaming</h4>
+                        <h4>Jan 2011 – May 2012</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Founded a video streaming company which provides solutions for broadcasting and signage in boardrooms, hospitals, entertainment venues, local government, and others.</p>
+                    </ion-card-content>
+                </ion-card>
+-->
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Consultant</h4>
+                        <h4>Oracle</h4>
+                        <h4>Aug 2009 – Sept 2010</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Worked with the JavaFX team which included developers of swing and java's now lead architect. Created localized accessible stylable UI widgets that operated across multiple devices (desktop/phone/tablet/tv/etc).  Lead the team porting and creating best practice sample <a (click)="openPage('CodeProjects')" href="#">code</a> highlighted on javafx.com and Oracle's developer network.  Performed as team scrum master responsible for code integration with other teams for master builds of the platform.  Reduced build times by 15% and footprint by 75+%.</p>
+                    </ion-card-content>
+                </ion-card>
+
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Consultant</h4>
+                        <h4>Sun Microsystems</h4>
+                        <h4>May 2009 – Aug 2009</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Sun Microsystems partnered with Simon & Schuster to prototype a software ebook reader for Java One. It demonstrated publishing media on a device independent platform. I developed the prototype starting two weeks before the conference, including learning the language.  Then they were bought and Oracle continued the arrangement.</p>
+                    </ion-card-content>
+                </ion-card>
+<!--
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Consultant</h4>
+                        <h4>IQBio Labs, Inc.</h4>
+                        <h4>March 2009 – May 2009</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Modified software and instrumentation to provide personal diagnostics for improving employee health.  The real time system was comprised several linked diagnostic stations, arrays of wearable patient sensors connected via bluetooth sending multi-gigabyte data sets, and a master clinic station rending data in 3d on the eclipse platform.  The original programmers were no longer available and they needed critical features added to their undocumented system for investors within a couple months.</p>
+                    </ion-card-content>
+                </ion-card>
+
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Startup Research</h4>
+                        <h4>May 2006 – March 2009</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Explored potential startup ideas.  One turned into <a href="http://www.kikistream.tv/">www.kikistream.tv</a> a few years later.</p>
+                    </ion-card-content>
+                </ion-card>
+-->
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Co-Founder</h4>
+                        <h4>SitePen, Inc.</h4>
+                        <h4>July 2001 – May 2006</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p margin-bottom>Developed web applications for a wide variety of customers.  Selected client projects listed below.</p>
+
+						<p margin-bottom>Medical Staffing - SaaS product where employees, employers, and staffing agencies could place workers for temporary jobs which involves a three party commit. Some components were licensed as open source.</p>
+
+						<p margin-bottom>Ambassador Media Group - SaaS product for selling and managing ad campaigns on ad networks including Google, Yahoo, MSN, Ask, Looksmart, and SuperPages. I architected the integration with their existing software, developed load projections, specifying and requisitioned hardware, and general project management.</p>
+
+						<p margin-bottom>GreenPlum Monitor - A browser based monitoring application which provided a continuously updated graphical representation of the status and activity of Greenplum databases and their underlying system resources such as cluster and machine status; table size and skew; and CPU, disk, memory, and network utilization.</p>
+					</ion-card-content>
+                </ion-card>
+<!--
+                <ion-card>
+                    <ion-card-header>
+                        <h4>Consultant</h4>
+                        <h4>Vizional Technologies</h4>
+                        <h4>April 2003 – June 2003</h4>
+                    </ion-card-header>
+                    <ion-card-content margin-left>
+                        <p>Helped deliver to <a rel="gallery" href="http://www.maersk.com/">A.P. Moller Group/Maersk</a> a replacement for their supply chain and logistics software. They have holdings in companies that operate container, tanker, bulk, and offshore supply shipping as well as offshore drilling and related activities such as Maersk Sealand, which accounts for sixty percent of worldwide shipping.</p>
+                    </ion-card-content>
+                </ion-card>
+-->
+        </ion-card-content>
+	</ion-card>
+    <ion-card class="visualUnity">
+        <ion-card-header>
+            <h3>education</h3>
+        </ion-card-header>
+        <ion-card-content margin-left>
+            <ion-list>
+				<ion-item>Ph.D. Physical Chemistry<br /><a href="http://www.chem.ucla.edu/">University of California</a>, Los Angeles<br />March, 2002</ion-item>
+				<ion-item>B.S. Chemistry<br /><a href="http://www.chem.ufl.edu/">University of Florida</a>, Gainesville<br />December, 1991</ion-item>
+                <ion-item>un Programme d'Étude du Travail<br />(work study)<br /><a href="https://en.wikipedia.org/wiki/Rh%C3%B4ne-Poulenc">Rhône Poulenc</a>, France<br />Summer, 1990</ion-item>
+			</ion-list>
+        </ion-card-content>
+	</ion-card>
+    <ion-card class="visualUnity">
+        <ion-card-header>
+            <h3>publications</h3>
+        </ion-card-header>
+        <ion-card-content margin-left>
+            <p>Purely scientific <a (click)="openPage('Publications')" href="#">publications</a> can be found in:</p>
+                    <p margin-left>Physical Review E</p>
+                    <p margin-left>Colloids and Surfaces A</p>
+                    <p margin-left>Journal of Chemical Physics</p>
+                    <p margin-left>Journal of Physical Chemistry</p>
+        </ion-card-content>
+	</ion-card>
+	<div class="footer">
+		<p><a href="mailto:contact@james.io">contact@james.io</a></p>
+		<p style="font-size: 0.7em">copyright {{getYear()}}</p>
+	</div>
+</ion-content>
