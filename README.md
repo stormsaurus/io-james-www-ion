@@ -13,3 +13,5 @@ Its relatively simplicity makes it a good candidate to periodically rewrite/upda
 It exercises several components of the ionic framework such as slides/swipper, grids/flex layout, and an assortment of basics like modal, chips, cards, etc.
 
 It's not licensed for privacy reasons but is available to view as a demonstration of work.
+
+Note the current active website is in Vue.
